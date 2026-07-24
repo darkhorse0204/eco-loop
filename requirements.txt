@@ -1,0 +1,21 @@
+# --- Core closed-loop pipeline ---
+numpy>=1.26
+pandas>=2.1
+pyyaml>=6.0
+requests>=2.31
+
+# --- Dashboard ---
+streamlit>=1.36
+plotly>=5.22
+
+# --- Static report / plots for the demo video & PDF ---
+matplotlib>=3.8
+
+# --- MCP server (agentic tool protocol) ---
+mcp>=1.2.0
+
+# NOTE:
+#   * pyenergyplus ships INSIDE the EnergyPlus install (tools/EnergyPlus-25.1.0/).
+#     It is added to sys.path at runtime by src/eplus_paths.py -- do NOT pip install it.
+#   * The LLM brain runs on Ollama (llama3.1:8b) at http://localhost:11434 -- no python
+#     package required, we call the REST API with `requests`.

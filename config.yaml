@@ -1,0 +1,57 @@
+# ============================================================================
+#  eco-loop building agent - central config
+#  every knob the loop uses lives here so runs are reproducible.
+# ============================================================================
+
+simulation:
+  # the baseline model. the ai run reuses the SAME idf; setpoints get overridden
+  # live through the energyplus runtime api (no file editing between runs).
+  idf: "models/baseline.idf"
+  # tampa, fl - hot humid, cooling-dominated, so the ai is really optimising the ac.
+  weather: "weather/USA_FL_Tampa.Intl.AP.722110_TMY3.epw"
+  # the run window comes from the idf's RunPeriod. keep it short for a live demo
+  # (a few days) and longer for the final numbers.
+
+control:
+  interval_minutes: 15         # how often the agent is allowed to move setpoints
+  llm_timeout_s: 20            # hard cap per llm decision; fall back on timeout
+  zones_are_global: true       # one setpoint pair applied to all occupied zones
+                               # (fast + robust). per-zone mode also works.
+
+comfort:
+  # ashrae-55 style occupied comfort envelope. the guardrail never lets the agent
+  # push outside these, so we never buy energy savings with discomfort. pmv is the
+  # comfort number we actually track.
+  occupied_heating_min_c: 20.0
+  occupied_heating_max_c: 22.0
+  occupied_cooling_min_c: 23.0
+  occupied_cooling_max_c: 25.5
+  min_deadband_c: 2.0
+  pmv_limit: 0.7               # |pmv| has to stay under this while occupied
+  # unoccupied setback room (ashrae 90.1 night-setback range)
+  unocc_heating_min_c: 15.6
+  unocc_cooling_max_c: 29.4
+  met_rate: 1.1                # office metabolic rate
+  clo_summer: 0.5
+  clo_winter: 1.0
+  air_velocity_ms: 0.1
+
+grid:
+  # synthetic but realistic daily signals. swap these for watttime / electricity maps.
+  # carbon intensity gco2/kwh - low midday (solar), high on the evening ramp.
+  carbon_base: 250
+  carbon_peak: 620
+  # time-of-use price $/kwh
+  price_offpeak: 0.08
+  price_peak: 0.34
+  peak_hours: [16, 21]         # 4pm-9pm evening peak
+
+llm:
+  provider: "ollama"
+  base_url: "http://localhost:11434"
+  model: "llama3.1:8b"
+  temperature: 0.1             # near-deterministic decisions
+  num_ctx: 4096
+
+output:
+  dir: "outputs"

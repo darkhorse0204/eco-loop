@@ -1,0 +1,1009 @@
+sim_time_hours,hour,occupied,outdoor_temp_c,carbon_gco2_kwh,price_usd_kwh,heating_sp_c,cooling_sp_c,source,latency_ms,rationale
+4344.167,0.17,False,26.9,378.0,0.08,15.6,28.0,llm,8789.7,It is a weekend and the building is unoccupied.
+4344.5,0.5,False,26.3,378.9,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4344.833,0.83,False,25.7,379.4,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4345.167,1.17,False,25.4,379.4,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4345.5,1.5,False,25.5,378.9,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4345.833,1.83,False,25.6,378.0,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4346.167,2.17,False,25.7,376.5,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4346.5,2.5,False,25.8,374.6,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4346.833,2.83,False,25.8,372.2,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4347.167,3.17,False,25.9,369.4,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4347.5,3.5,False,26.0,366.1,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4347.833,3.83,False,26.1,362.5,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4348.167,4.17,False,26.0,358.5,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4348.5,4.5,False,25.9,354.2,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4348.833,4.83,False,25.7,349.5,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4349.167,5.17,False,25.6,344.6,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4349.5,5.5,False,25.6,339.5,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4349.833,5.83,False,25.6,334.2,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4350.167,6.17,False,25.9,328.8,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4350.5,6.5,False,26.4,323.2,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4350.833,6.83,False,26.9,317.6,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4351.167,7.17,False,27.5,311.9,0.08,15.6,28.0,llm,8740.3,It is a weekend morning and the building is unoccupied.
+4351.5,7.5,False,28.0,306.3,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend morning and the building is unoccupied.
+4351.833,7.83,False,28.6,300.7,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend morning and the building is unoccupied.
+4352.167,8.17,False,29.0,295.3,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend morning and the building is unoccupied.
+4352.5,8.5,False,29.1,290.0,0.08,15.6,28.0,llm,8937.6,Setting back to save energy on a weekend morning.
+4352.833,8.83,False,29.3,284.9,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy on a weekend morning.
+4353.167,9.17,False,29.6,280.1,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy on a weekend morning.
+4353.5,9.5,False,30.0,275.5,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy on a weekend morning.
+4353.833,9.83,False,30.4,271.3,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy on a weekend morning.
+4354.167,10.17,False,30.7,267.5,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy on a weekend morning.
+4354.5,10.5,False,30.9,264.1,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy on a weekend morning.
+4354.833,10.83,False,31.0,261.3,0.08,15.6,28.0,llm,8906.1,It is currently unoccupied and the grid is not in peak period.
+4355.167,11.17,False,31.2,259.1,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is not in peak period.
+4355.5,11.5,False,31.4,257.6,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is not in peak period.
+4355.833,11.83,False,31.6,256.9,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is not in peak period.
+4356.167,12.17,False,31.8,257.3,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is not in peak period.
+4356.5,12.5,False,32.0,258.7,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is not in peak period.
+4356.833,12.83,False,32.1,261.5,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is not in peak period.
+4357.167,13.17,False,32.3,265.9,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is not in peak period.
+4357.5,13.5,False,32.5,271.9,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is not in peak period.
+4357.833,13.83,False,32.7,280.0,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is not in peak period.
+4358.167,14.17,False,32.8,290.1,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is not in peak period.
+4358.5,14.5,False,32.8,302.5,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is not in peak period.
+4358.833,14.83,False,32.8,317.3,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is not in peak period.
+4359.167,15.17,False,32.8,334.4,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is not in peak period.
+4359.5,15.5,False,32.8,353.6,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is not in peak period.
+4359.833,15.83,False,32.8,374.8,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is not in peak period.
+4360.167,16.17,False,32.6,397.5,0.34,15.6,29.0,llm,8975.4,It is a weekend and the building is unoccupied.
+4360.5,16.5,False,32.2,421.2,0.34,15.6,29.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4360.833,16.83,False,31.9,445.2,0.34,15.6,29.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4361.167,17.17,False,31.6,468.6,0.34,15.6,29.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4361.5,17.5,False,31.4,490.9,0.34,15.6,29.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4361.833,17.83,False,31.2,511.0,0.34,15.6,29.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4362.167,18.17,False,30.9,528.2,0.34,15.6,28.0,llm,9220.0,It is an evening during the grid peak period and the building is unoccupied.
+4362.5,18.5,False,30.6,542.0,0.34,15.6,28.0,llm,0.0,(cached) It is an evening during the grid peak period and the building is unoccupied.
+4362.833,18.83,False,30.2,551.9,0.34,15.6,28.0,llm,0.0,(cached) It is an evening during the grid peak period and the building is unoccupied.
+4363.167,19.17,False,29.7,557.5,0.34,15.6,28.0,llm,0.0,(cached) It is an evening during the grid peak period and the building is unoccupied.
+4363.5,19.5,False,29.1,558.9,0.34,15.6,28.0,llm,0.0,(cached) It is an evening during the grid peak period and the building is unoccupied.
+4363.833,19.83,False,28.6,556.3,0.34,15.6,29.0,llm,8541.0,Setting back to save energy during the grid peak period.
+4364.167,20.17,False,28.2,549.9,0.34,15.6,29.0,llm,0.0,(cached) Setting back to save energy during the grid peak period.
+4364.5,20.5,False,28.1,540.4,0.34,15.6,29.0,llm,0.0,(cached) Setting back to save energy during the grid peak period.
+4364.833,20.83,False,27.9,528.4,0.34,15.6,29.0,llm,0.0,(cached) Setting back to save energy during the grid peak period.
+4365.167,21.17,False,27.7,514.7,0.08,15.6,28.0,llm,9506.3,"It is a weekend evening with low grid carbon and price, so we can set back to save energy."
+4365.5,21.5,False,27.5,500.0,0.08,15.6,28.0,llm,0.0,"(cached) It is a weekend evening with low grid carbon and price, so we can set back to save energy."
+4365.833,21.83,False,27.3,485.0,0.08,15.6,28.0,llm,0.0,"(cached) It is a weekend evening with low grid carbon and price, so we can set back to save energy."
+4366.167,22.17,False,27.2,470.3,0.08,15.6,28.0,llm,0.0,"(cached) It is a weekend evening with low grid carbon and price, so we can set back to save energy."
+4366.5,22.5,False,27.2,456.4,0.08,15.6,28.0,llm,0.0,"(cached) It is a weekend evening with low grid carbon and price, so we can set back to save energy."
+4366.833,22.83,False,27.2,443.6,0.08,15.6,28.0,llm,0.0,"(cached) It is a weekend evening with low grid carbon and price, so we can set back to save energy."
+4367.167,23.17,False,27.2,432.2,0.08,15.6,28.0,llm,0.0,"(cached) It is a weekend evening with low grid carbon and price, so we can set back to save energy."
+4367.5,23.5,False,27.2,422.2,0.08,15.6,28.0,llm,0.0,"(cached) It is a weekend evening with low grid carbon and price, so we can set back to save energy."
+4367.833,23.83,False,27.2,413.6,0.08,15.6,28.0,llm,0.0,"(cached) It is a weekend evening with low grid carbon and price, so we can set back to save energy."
+4368.167,0.17,False,27.2,378.0,0.08,15.6,28.0,llm,0.0,"(cached) It is a weekend evening with low grid carbon and price, so we can set back to save energy."
+4368.5,0.5,False,27.2,378.9,0.08,15.6,28.0,llm,0.0,"(cached) It is a weekend evening with low grid carbon and price, so we can set back to save energy."
+4368.833,0.83,False,27.2,379.4,0.08,15.6,28.0,llm,0.0,"(cached) It is a weekend evening with low grid carbon and price, so we can set back to save energy."
+4369.167,1.17,False,27.1,379.4,0.08,15.6,28.0,llm,0.0,"(cached) It is a weekend evening with low grid carbon and price, so we can set back to save energy."
+4369.5,1.5,False,26.9,378.9,0.08,15.6,29.0,llm,9539.4,Unoccupied building during the day with high outdoor temperature and low grid carbon.
+4369.833,1.83,False,26.8,378.0,0.08,15.6,29.0,llm,0.0,(cached) Unoccupied building during the day with high outdoor temperature and low grid carbon.
+4370.167,2.17,False,26.7,376.5,0.08,15.6,29.0,llm,0.0,(cached) Unoccupied building during the day with high outdoor temperature and low grid carbon.
+4370.5,2.5,False,26.7,374.6,0.08,15.6,29.0,llm,0.0,(cached) Unoccupied building during the day with high outdoor temperature and low grid carbon.
+4370.833,2.83,False,26.7,372.2,0.08,15.6,29.0,llm,0.0,(cached) Unoccupied building during the day with high outdoor temperature and low grid carbon.
+4371.167,3.17,False,26.7,369.4,0.08,15.6,29.0,llm,0.0,(cached) Unoccupied building during the day with high outdoor temperature and low grid carbon.
+4371.5,3.5,False,26.7,366.1,0.08,15.6,29.0,llm,0.0,(cached) Unoccupied building during the day with high outdoor temperature and low grid carbon.
+4371.833,3.83,False,26.7,362.5,0.08,15.6,29.0,llm,0.0,(cached) Unoccupied building during the day with high outdoor temperature and low grid carbon.
+4372.167,4.17,False,26.8,358.5,0.08,15.6,29.0,llm,0.0,(cached) Unoccupied building during the day with high outdoor temperature and low grid carbon.
+4372.5,4.5,False,26.9,354.2,0.08,15.6,29.0,llm,0.0,(cached) Unoccupied building during the day with high outdoor temperature and low grid carbon.
+4372.833,4.83,False,27.1,349.5,0.08,15.6,28.0,llm,8923.3,Setting back to save energy during unoccupied period
+4373.167,5.17,True,27.2,344.6,0.08,21.5,25.5,llm,10190.2,Occupied during daytime with moderate outdoor temperature and high grid carbon.
+4373.5,5.5,True,27.2,339.5,0.08,21.5,25.0,llm,9019.4,Occupied during daytime with moderate outdoor temperature and comfortable indoor temperature.
+4373.833,5.83,True,27.2,334.2,0.08,21.5,25.0,llm,0.0,(cached) Occupied during daytime with moderate outdoor temperature and comfortable indoor temperature.
+4374.167,6.17,True,27.4,328.8,0.08,21.5,25.0,llm,0.0,(cached) Occupied during daytime with moderate outdoor temperature and comfortable indoor temperature.
+4374.5,6.5,True,27.8,323.2,0.08,21.5,25.0,llm,0.0,(cached) Occupied during daytime with moderate outdoor temperature and comfortable indoor temperature.
+4374.833,6.83,True,28.1,317.6,0.08,21.5,25.0,llm,0.0,(cached) Occupied during daytime with moderate outdoor temperature and comfortable indoor temperature.
+4375.167,7.17,True,28.5,311.9,0.08,21.5,25.0,llm,0.0,(cached) Occupied during daytime with moderate outdoor temperature and comfortable indoor temperature.
+4375.5,7.5,True,28.9,306.3,0.08,21.5,25.0,llm,0.0,(cached) Occupied during daytime with moderate outdoor temperature and comfortable indoor temperature.
+4375.833,7.83,True,29.2,300.7,0.08,21.5,24.9,llm,8810.9,Occupied during morning hours with moderate outdoor temperature and high grid carbon.
+4376.167,8.17,True,29.6,295.3,0.08,21.5,24.9,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature and high grid carbon.
+4376.5,8.5,True,30.0,290.0,0.08,21.5,24.9,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature and high grid carbon.
+4376.833,8.83,True,30.4,284.9,0.08,21.5,24.9,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature and high grid carbon.
+4377.167,9.17,True,30.7,280.1,0.08,21.5,24.9,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature and high grid carbon.
+4377.5,9.5,True,30.9,275.5,0.08,21.5,24.9,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature and high grid carbon.
+4377.833,9.83,True,31.0,271.3,0.08,21.5,25.0,llm,9806.6,Occupied office with high outdoor temperature; setting cooling to warm end of comfort band to save energy and reduce carbon emissions.
+4378.167,10.17,True,31.2,267.5,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with high outdoor temperature; setting cooling to warm end of comfort band to save energy and reduce carbon emissions.
+4378.5,10.5,True,31.4,264.1,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with high outdoor temperature; setting cooling to warm end of comfort band to save energy and reduce carbon emissions.
+4378.833,10.83,True,31.6,261.3,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with high outdoor temperature; setting cooling to warm end of comfort band to save energy and reduce carbon emissions.
+4379.167,11.17,True,31.8,259.1,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with high outdoor temperature; setting cooling to warm end of comfort band to save energy and reduce carbon emissions.
+4379.5,11.5,True,32.0,257.6,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with high outdoor temperature; setting cooling to warm end of comfort band to save energy and reduce carbon emissions.
+4379.833,11.83,True,32.1,256.9,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with high outdoor temperature; setting cooling to warm end of comfort band to save energy and reduce carbon emissions.
+4380.167,12.17,True,32.2,257.3,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with high outdoor temperature; setting cooling to warm end of comfort band to save energy and reduce carbon emissions.
+4380.5,12.5,True,32.2,258.7,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with high outdoor temperature; setting cooling to warm end of comfort band to save energy and reduce carbon emissions.
+4380.833,12.83,True,32.2,261.5,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with high outdoor temperature; setting cooling to warm end of comfort band to save energy and reduce carbon emissions.
+4381.167,13.17,True,32.3,265.9,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with high outdoor temperature; setting cooling to warm end of comfort band to save energy and reduce carbon emissions.
+4381.5,13.5,True,32.5,271.9,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with high outdoor temperature; setting cooling to warm end of comfort band to save energy and reduce carbon emissions.
+4381.833,13.83,True,32.7,280.0,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with high outdoor temperature; setting cooling to warm end of comfort band to save energy and reduce carbon emissions.
+4382.167,14.17,True,32.8,290.1,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with high outdoor temperature; setting cooling to warm end of comfort band to save energy and reduce carbon emissions.
+4382.5,14.5,True,32.8,302.5,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with high outdoor temperature; setting cooling to warm end of comfort band to save energy and reduce carbon emissions.
+4382.833,14.83,True,32.8,317.3,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with high outdoor temperature; setting cooling to warm end of comfort band to save energy and reduce carbon emissions.
+4383.167,15.17,True,32.5,334.4,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with high outdoor temperature; setting cooling to warm end of comfort band to save energy and reduce carbon emissions.
+4383.5,15.5,True,31.9,353.6,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with high outdoor temperature; setting cooling to warm end of comfort band to save energy and reduce carbon emissions.
+4383.833,15.83,True,31.4,374.8,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with high outdoor temperature; setting cooling to warm end of comfort band to save energy and reduce carbon emissions.
+4384.167,16.17,True,31.2,397.5,0.34,21.5,25.5,llm,9501.9,"Grid is in peak period and carbon-intensive, so float cooling setpoint to warm end of comfort band."
+4384.5,16.5,True,31.4,421.2,0.34,21.5,25.5,llm,0.0,"(cached) Grid is in peak period and carbon-intensive, so float cooling setpoint to warm end of comfort band."
+4384.833,16.83,True,31.6,445.2,0.34,21.5,25.5,llm,0.0,"(cached) Grid is in peak period and carbon-intensive, so float cooling setpoint to warm end of comfort band."
+4385.167,17.17,True,31.6,468.6,0.34,21.5,25.5,llm,0.0,"(cached) Grid is in peak period and carbon-intensive, so float cooling setpoint to warm end of comfort band."
+4385.5,17.5,True,31.4,490.9,0.34,21.5,25.5,llm,0.0,"(cached) Grid is in peak period and carbon-intensive, so float cooling setpoint to warm end of comfort band."
+4385.833,17.83,True,31.2,511.0,0.34,21.5,25.5,llm,0.0,"(cached) Grid is in peak period and carbon-intensive, so float cooling setpoint to warm end of comfort band."
+4386.167,18.17,True,30.8,528.2,0.34,21.5,25.5,llm,9888.9,"Occupied during peak grid period, so choosing warm end of comfort band to minimize expensive kWh"
+4386.5,18.5,True,30.2,542.0,0.34,21.5,25.5,llm,0.0,"(cached) Occupied during peak grid period, so choosing warm end of comfort band to minimize expensive kWh"
+4386.833,18.83,True,29.7,551.9,0.34,21.5,25.5,llm,0.0,"(cached) Occupied during peak grid period, so choosing warm end of comfort band to minimize expensive kWh"
+4387.167,19.17,True,29.3,557.5,0.34,21.5,25.5,llm,0.0,"(cached) Occupied during peak grid period, so choosing warm end of comfort band to minimize expensive kWh"
+4387.5,19.5,True,29.1,558.9,0.34,21.5,25.5,llm,0.0,"(cached) Occupied during peak grid period, so choosing warm end of comfort band to minimize expensive kWh"
+4387.833,19.83,True,29.0,556.3,0.34,21.5,25.5,llm,9703.0,"Occupied and grid is in peak period, so float cooling setpoint to warm end of comfort band."
+4388.167,20.17,True,28.9,549.9,0.34,21.5,25.5,llm,0.0,"(cached) Occupied and grid is in peak period, so float cooling setpoint to warm end of comfort band."
+4388.5,20.5,True,28.9,540.4,0.34,21.5,25.5,llm,0.0,"(cached) Occupied and grid is in peak period, so float cooling setpoint to warm end of comfort band."
+4388.833,20.83,True,28.9,528.4,0.34,21.5,25.5,llm,0.0,"(cached) Occupied and grid is in peak period, so float cooling setpoint to warm end of comfort band."
+4389.167,21.17,True,28.8,514.7,0.08,21.0,25.0,llm,9078.2,"Occupied and grid is not in peak period, so choose a comfortable cooling setpoint"
+4389.5,21.5,True,28.6,500.0,0.08,21.0,25.0,llm,0.0,"(cached) Occupied and grid is not in peak period, so choose a comfortable cooling setpoint"
+4389.833,21.83,True,28.4,485.0,0.08,21.0,25.0,llm,0.0,"(cached) Occupied and grid is not in peak period, so choose a comfortable cooling setpoint"
+4390.167,22.17,True,28.3,470.3,0.08,21.0,25.0,llm,0.0,"(cached) Occupied and grid is not in peak period, so choose a comfortable cooling setpoint"
+4390.5,22.5,True,28.3,456.4,0.08,21.0,25.0,llm,0.0,"(cached) Occupied and grid is not in peak period, so choose a comfortable cooling setpoint"
+4390.833,22.83,True,28.3,443.6,0.08,21.0,25.0,llm,0.0,"(cached) Occupied and grid is not in peak period, so choose a comfortable cooling setpoint"
+4391.167,23.17,False,28.3,432.2,0.08,15.6,28.3,llm,8618.9,It is nighttime and the building is unoccupied.
+4391.5,23.5,False,28.3,422.2,0.08,15.6,28.3,llm,0.0,(cached) It is nighttime and the building is unoccupied.
+4391.833,23.83,False,28.3,413.6,0.08,15.6,28.3,llm,0.0,(cached) It is nighttime and the building is unoccupied.
+4392.167,0.17,False,28.3,378.0,0.08,15.6,28.3,llm,0.0,(cached) It is nighttime and the building is unoccupied.
+4392.5,0.5,False,28.3,378.9,0.08,15.6,28.3,llm,0.0,(cached) It is nighttime and the building is unoccupied.
+4392.833,0.83,False,28.3,379.4,0.08,15.6,28.3,llm,0.0,(cached) It is nighttime and the building is unoccupied.
+4393.167,1.17,False,28.2,379.4,0.08,15.6,28.3,llm,0.0,(cached) It is nighttime and the building is unoccupied.
+4393.5,1.5,False,28.1,378.9,0.08,15.6,28.3,llm,0.0,(cached) It is nighttime and the building is unoccupied.
+4393.833,1.83,False,27.9,378.0,0.08,15.6,28.3,llm,0.0,(cached) It is nighttime and the building is unoccupied.
+4394.167,2.17,False,27.8,376.5,0.08,15.6,28.3,llm,0.0,(cached) It is nighttime and the building is unoccupied.
+4394.5,2.5,False,27.8,374.6,0.08,15.6,28.3,llm,0.0,(cached) It is nighttime and the building is unoccupied.
+4394.833,2.83,False,27.8,372.2,0.08,15.6,28.3,llm,0.0,(cached) It is nighttime and the building is unoccupied.
+4395.167,3.17,False,27.8,369.4,0.08,15.6,28.3,llm,0.0,(cached) It is nighttime and the building is unoccupied.
+4395.5,3.5,False,27.8,366.1,0.08,15.6,28.3,llm,0.0,(cached) It is nighttime and the building is unoccupied.
+4395.833,3.83,False,27.8,362.5,0.08,15.6,28.3,llm,0.0,(cached) It is nighttime and the building is unoccupied.
+4396.167,4.17,False,27.8,358.5,0.08,15.6,28.3,llm,0.0,(cached) It is nighttime and the building is unoccupied.
+4396.5,4.5,False,27.8,354.2,0.08,15.6,28.3,llm,0.0,(cached) It is nighttime and the building is unoccupied.
+4396.833,4.83,False,27.8,349.5,0.08,15.6,28.3,llm,0.0,(cached) It is nighttime and the building is unoccupied.
+4397.167,5.17,True,27.8,344.6,0.08,21.0,25.5,llm,8995.5,Occupied during daytime with high outdoor temperature and moderate indoor temperature.
+4397.5,5.5,True,27.8,339.5,0.08,21.0,25.5,llm,0.0,(cached) Occupied during daytime with high outdoor temperature and moderate indoor temperature.
+4397.833,5.83,True,27.8,334.2,0.08,21.0,25.5,llm,0.0,(cached) Occupied during daytime with high outdoor temperature and moderate indoor temperature.
+4398.167,6.17,True,28.0,328.8,0.08,21.0,25.5,llm,0.0,(cached) Occupied during daytime with high outdoor temperature and moderate indoor temperature.
+4398.5,6.5,True,28.4,323.2,0.08,21.0,25.5,llm,0.0,(cached) Occupied during daytime with high outdoor temperature and moderate indoor temperature.
+4398.833,6.83,True,28.7,317.6,0.08,21.0,25.5,llm,0.0,(cached) Occupied during daytime with high outdoor temperature and moderate indoor temperature.
+4399.167,7.17,True,28.8,311.9,0.08,21.0,25.5,llm,0.0,(cached) Occupied during daytime with high outdoor temperature and moderate indoor temperature.
+4399.5,7.5,True,28.6,306.3,0.08,21.0,25.5,llm,0.0,(cached) Occupied during daytime with high outdoor temperature and moderate indoor temperature.
+4399.833,7.83,True,28.4,300.7,0.08,21.0,25.5,llm,0.0,(cached) Occupied during daytime with high outdoor temperature and moderate indoor temperature.
+4400.167,8.17,True,28.4,295.3,0.08,21.0,25.5,llm,0.0,(cached) Occupied during daytime with high outdoor temperature and moderate indoor temperature.
+4400.5,8.5,True,28.6,290.0,0.08,21.0,25.5,llm,0.0,(cached) Occupied during daytime with high outdoor temperature and moderate indoor temperature.
+4400.833,8.83,True,28.8,284.9,0.08,21.0,25.5,llm,0.0,(cached) Occupied during daytime with high outdoor temperature and moderate indoor temperature.
+4401.167,9.17,True,29.0,280.1,0.08,21.0,25.5,llm,0.0,(cached) Occupied during daytime with high outdoor temperature and moderate indoor temperature.
+4401.5,9.5,True,29.1,275.5,0.08,21.0,25.5,llm,9192.8,"Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4401.833,9.83,True,29.3,271.3,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4402.167,10.17,True,29.6,267.5,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4402.5,10.5,True,30.0,264.1,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4402.833,10.83,True,30.4,261.3,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4403.167,11.17,True,30.7,259.1,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4403.5,11.5,True,30.9,257.6,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4403.833,11.83,True,31.0,256.9,0.08,21.0,25.5,llm,9492.2,Occupied during peak hours with high outdoor temperature.
+4404.167,12.17,True,31.2,257.3,0.08,21.0,25.5,llm,0.0,(cached) Occupied during peak hours with high outdoor temperature.
+4404.5,12.5,True,31.4,258.7,0.08,21.0,25.5,llm,0.0,(cached) Occupied during peak hours with high outdoor temperature.
+4404.833,12.83,True,31.6,261.5,0.08,21.0,25.5,llm,0.0,(cached) Occupied during peak hours with high outdoor temperature.
+4405.167,13.17,True,31.6,265.9,0.08,21.0,25.5,llm,0.0,(cached) Occupied during peak hours with high outdoor temperature.
+4405.5,13.5,True,31.4,271.9,0.08,21.0,25.5,llm,0.0,(cached) Occupied during peak hours with high outdoor temperature.
+4405.833,13.83,True,31.2,280.0,0.08,21.0,25.5,llm,0.0,(cached) Occupied during peak hours with high outdoor temperature.
+4406.167,14.17,True,31.0,290.1,0.08,21.0,25.5,llm,0.0,(cached) Occupied during peak hours with high outdoor temperature.
+4406.5,14.5,True,30.9,302.5,0.08,21.0,25.5,llm,9550.1,Occupied and grid is not in peak period.
+4406.833,14.83,True,30.7,317.3,0.08,21.0,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4407.167,15.17,True,30.1,334.4,0.08,21.0,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4407.5,15.5,True,29.2,353.6,0.08,21.0,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4407.833,15.83,True,28.3,374.8,0.08,21.0,25.5,llm,9443.2,Occupied building during non-peak grid period.
+4408.167,16.17,True,27.1,397.5,0.34,21.0,25.5,llm,9234.0,"Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4408.5,16.5,True,25.6,421.2,0.34,21.0,25.5,llm,9852.1,"During grid peak period, float cooling setpoint to warm end of comfort band to minimize expensive and dirty kWh."
+4408.833,16.83,True,24.1,445.2,0.34,21.0,25.5,llm,9132.1,"Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4409.167,17.17,True,23.5,468.6,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4409.5,17.5,True,23.9,490.9,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4409.833,17.83,True,24.2,511.0,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4410.167,18.17,True,24.5,528.2,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4410.5,18.5,True,24.7,542.0,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4410.833,18.83,True,24.9,551.9,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4411.167,19.17,True,24.9,557.5,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4411.5,19.5,True,24.7,558.9,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4411.833,19.83,True,24.5,556.3,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4412.167,20.17,True,24.5,549.9,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4412.5,20.5,True,24.7,540.4,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4412.833,20.83,True,24.9,528.4,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4413.167,21.17,True,25.0,514.7,0.08,21.0,25.5,llm,8749.8,Occupied and grid is not in peak period.
+4413.5,21.5,True,25.0,500.0,0.08,21.0,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4413.833,21.83,True,25.0,485.0,0.08,21.0,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4414.167,22.17,True,25.1,470.3,0.08,21.0,25.5,llm,10059.9,Occupied building and grid is not in peak period.
+4414.5,22.5,True,25.3,456.4,0.08,21.0,25.5,llm,0.0,(cached) Occupied building and grid is not in peak period.
+4414.833,22.83,True,25.5,443.6,0.08,21.0,25.5,llm,0.0,(cached) Occupied building and grid is not in peak period.
+4415.167,23.17,False,25.4,432.2,0.08,15.6,28.0,llm,8404.4,It is nighttime and the building is unoccupied.
+4415.5,23.5,False,25.0,422.2,0.08,15.6,29.0,llm,9238.2,It is currently unoccupied and the grid is in a high-carbon window.
+4415.833,23.83,False,24.6,413.6,0.08,15.6,29.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4416.167,0.17,False,24.4,378.0,0.08,15.6,29.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4416.5,0.5,False,24.4,378.9,0.08,15.6,29.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4416.833,0.83,False,24.4,379.4,0.08,15.6,29.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4417.167,1.17,False,24.5,379.4,0.08,15.6,29.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4417.5,1.5,False,24.7,378.9,0.08,15.6,29.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4417.833,1.83,False,24.9,378.0,0.08,15.6,29.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4418.167,2.17,False,25.1,376.5,0.08,15.6,28.0,llm,9285.9,It is currently unoccupied and the grid is in a high-carbon window.
+4418.5,2.5,False,25.3,374.6,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4418.833,2.83,False,25.5,372.2,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4419.167,3.17,False,25.7,369.4,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4419.5,3.5,False,25.9,366.1,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4419.833,3.83,False,26.0,362.5,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4420.167,4.17,False,25.9,358.5,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4420.5,4.5,False,25.6,354.2,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4420.833,4.83,False,25.2,349.5,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4421.167,5.17,False,24.9,344.6,0.08,15.6,28.0,llm,8476.9,Setting back to save energy during unoccupied period
+4421.5,5.5,False,24.7,339.5,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4421.833,5.83,False,24.5,334.2,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4422.167,6.17,False,24.5,328.8,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4422.5,6.5,False,24.7,323.2,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4422.833,6.83,False,24.9,317.6,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4423.167,7.17,False,25.1,311.9,0.08,15.6,28.0,llm,8983.7,Setting back to save energy during unoccupied period
+4423.5,7.5,False,25.3,306.3,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4423.833,7.83,False,25.5,300.7,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4424.167,8.17,False,25.7,295.3,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4424.5,8.5,False,25.9,290.0,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4424.833,8.83,False,26.0,284.9,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4425.167,9.17,False,26.1,280.1,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4425.5,9.5,False,26.1,275.5,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4425.833,9.83,False,26.1,271.3,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4426.167,10.17,False,26.2,267.5,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4426.5,10.5,False,26.4,264.1,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4426.833,10.83,False,26.6,261.3,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4427.167,11.17,False,26.8,259.1,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4427.5,11.5,False,26.9,257.6,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4427.833,11.83,False,27.1,256.9,0.08,15.6,28.0,llm,10062.5,"The building is unoccupied and it's a peak grid period, so we're setting back to save energy."
+4428.167,12.17,False,27.4,257.3,0.08,15.6,28.0,llm,0.0,"(cached) The building is unoccupied and it's a peak grid period, so we're setting back to save energy."
+4428.5,12.5,False,27.8,258.7,0.08,15.6,28.0,llm,0.0,"(cached) The building is unoccupied and it's a peak grid period, so we're setting back to save energy."
+4428.833,12.83,False,28.1,261.5,0.08,15.6,28.0,llm,0.0,"(cached) The building is unoccupied and it's a peak grid period, so we're setting back to save energy."
+4429.167,13.17,False,28.4,265.9,0.08,15.6,28.0,llm,0.0,"(cached) The building is unoccupied and it's a peak grid period, so we're setting back to save energy."
+4429.5,13.5,False,28.6,271.9,0.08,15.6,28.0,llm,0.0,"(cached) The building is unoccupied and it's a peak grid period, so we're setting back to save energy."
+4429.833,13.83,False,28.8,280.0,0.08,15.6,28.0,llm,0.0,"(cached) The building is unoccupied and it's a peak grid period, so we're setting back to save energy."
+4430.167,14.17,False,29.1,290.1,0.08,15.6,28.0,llm,8658.1,Setting back to save energy during unoccupied period
+4430.5,14.5,False,29.4,302.5,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4430.833,14.83,False,29.8,317.3,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4431.167,15.17,False,30.0,334.4,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4431.5,15.5,False,30.0,353.6,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4431.833,15.83,False,30.0,374.8,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4432.167,16.17,False,29.8,397.5,0.34,15.6,25.5,llm,10097.5,"During the grid peak period, float cooling setpoint to warm end of comfort band to save expensive, dirty kWh."
+4432.5,16.5,False,29.4,421.2,0.34,15.6,25.5,llm,0.0,"(cached) During the grid peak period, float cooling setpoint to warm end of comfort band to save expensive, dirty kWh."
+4432.833,16.83,False,29.1,445.2,0.34,15.6,25.5,llm,0.0,"(cached) During the grid peak period, float cooling setpoint to warm end of comfort band to save expensive, dirty kWh."
+4433.167,17.17,False,28.8,468.6,0.34,15.6,28.0,llm,8434.7,Setting back to save energy during grid peak period
+4433.5,17.5,False,28.6,490.9,0.34,15.6,28.0,llm,0.0,(cached) Setting back to save energy during grid peak period
+4433.833,17.83,False,28.4,511.0,0.34,15.6,28.0,llm,0.0,(cached) Setting back to save energy during grid peak period
+4434.167,18.17,False,28.3,528.2,0.34,15.6,28.0,llm,0.0,(cached) Setting back to save energy during grid peak period
+4434.5,18.5,False,28.3,542.0,0.34,15.6,28.0,llm,0.0,(cached) Setting back to save energy during grid peak period
+4434.833,18.83,False,28.3,551.9,0.34,15.6,28.0,llm,0.0,(cached) Setting back to save energy during grid peak period
+4435.167,19.17,False,28.2,557.5,0.34,15.6,28.0,llm,0.0,(cached) Setting back to save energy during grid peak period
+4435.5,19.5,False,28.1,558.9,0.34,15.6,28.0,llm,0.0,(cached) Setting back to save energy during grid peak period
+4435.833,19.83,False,27.9,556.3,0.34,15.6,28.0,llm,0.0,(cached) Setting back to save energy during grid peak period
+4436.167,20.17,False,27.7,549.9,0.34,15.6,28.0,llm,0.0,(cached) Setting back to save energy during grid peak period
+4436.5,20.5,False,27.5,540.4,0.34,15.6,28.0,llm,0.0,(cached) Setting back to save energy during grid peak period
+4436.833,20.83,False,27.3,528.4,0.34,15.6,28.0,llm,0.0,(cached) Setting back to save energy during grid peak period
+4437.167,21.17,False,27.1,514.7,0.08,15.6,28.0,llm,9212.2,The building is unoccupied and it's a low-carbon grid period.
+4437.5,21.5,False,26.9,500.0,0.08,15.6,28.0,llm,9112.3,It is currently unoccupied and the grid is not in peak period.
+4437.833,21.83,False,26.8,485.0,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is not in peak period.
+4438.167,22.17,False,26.4,470.3,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is not in peak period.
+4438.5,22.5,False,25.9,456.4,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is not in peak period.
+4438.833,22.83,False,25.3,443.6,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is not in peak period.
+4439.167,23.17,False,25.0,432.2,0.08,15.6,28.0,llm,8739.3,Setting back to save energy during unoccupied period
+4439.5,23.5,False,25.0,422.2,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4439.833,23.83,False,25.0,413.6,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4440.167,0.17,False,24.9,378.0,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4440.5,0.5,False,24.7,378.9,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4440.833,0.83,False,24.5,379.4,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4441.167,1.17,False,24.5,379.4,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4441.5,1.5,False,24.7,378.9,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4441.833,1.83,False,24.9,378.0,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4442.167,2.17,False,24.9,376.5,0.08,15.6,28.0,llm,0.1,(cached) Setting back to save energy during unoccupied period
+4442.5,2.5,False,24.7,374.6,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4442.833,2.83,False,24.5,372.2,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4443.167,3.17,False,24.4,369.4,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4443.5,3.5,False,24.4,366.1,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4443.833,3.83,False,24.4,362.5,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4444.167,4.17,False,24.4,358.5,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4444.5,4.5,False,24.4,354.2,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4444.833,4.83,False,24.4,349.5,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4445.167,5.17,True,24.3,344.6,0.08,21.5,25.5,llm,9077.8,Occupied during non-peak grid period with moderate outdoor temperature.
+4445.5,5.5,True,24.1,339.5,0.08,21.5,25.5,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4445.833,5.83,True,24.0,334.2,0.08,21.5,25.5,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4446.167,6.17,True,24.0,328.8,0.08,21.5,25.5,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4446.5,6.5,True,24.1,323.2,0.08,21.5,25.5,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4446.833,6.83,True,24.3,317.6,0.08,21.5,25.5,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4447.167,7.17,True,24.7,311.9,0.08,21.5,25.5,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4447.5,7.5,True,25.2,306.3,0.08,21.5,25.0,llm,8590.1,Occupied during morning hours with moderate outdoor temperature.
+4447.833,7.83,True,25.8,300.7,0.08,21.5,25.0,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature.
+4448.167,8.17,True,26.3,295.3,0.08,21.5,25.0,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature.
+4448.5,8.5,True,26.6,290.0,0.08,21.5,25.0,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature.
+4448.833,8.83,True,27.0,284.9,0.08,21.5,25.0,llm,8868.5,Occupied office with moderate outdoor temperature and comfortable indoor temperature.
+4449.167,9.17,True,27.4,280.1,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and comfortable indoor temperature.
+4449.5,9.5,True,27.8,275.5,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and comfortable indoor temperature.
+4449.833,9.83,True,28.1,271.3,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and comfortable indoor temperature.
+4450.167,10.17,True,28.4,267.5,0.08,21.5,25.0,llm,0.1,(cached) Occupied office with moderate outdoor temperature and comfortable indoor temperature.
+4450.5,10.5,True,28.6,264.1,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and comfortable indoor temperature.
+4450.833,10.83,True,28.8,261.3,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and comfortable indoor temperature.
+4451.167,11.17,True,29.0,259.1,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and comfortable indoor temperature.
+4451.5,11.5,True,29.1,257.6,0.08,21.5,25.0,llm,8564.6,Occupied and grid is not in peak period.
+4451.833,11.83,True,29.3,256.9,0.08,21.5,25.0,llm,0.0,(cached) Occupied and grid is not in peak period.
+4452.167,12.17,True,29.7,257.3,0.08,21.5,25.0,llm,0.0,(cached) Occupied and grid is not in peak period.
+4452.5,12.5,True,30.2,258.7,0.08,21.5,25.0,llm,0.0,(cached) Occupied and grid is not in peak period.
+4452.833,12.83,True,30.8,261.5,0.08,21.5,25.0,llm,0.0,(cached) Occupied and grid is not in peak period.
+4453.167,13.17,True,31.2,265.9,0.08,21.5,25.5,llm,9271.8,Occupied and grid is not in peak period.
+4453.5,13.5,True,31.4,271.9,0.08,21.5,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4453.833,13.83,True,31.6,280.0,0.08,21.5,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4454.167,14.17,True,31.7,290.1,0.08,21.5,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4454.5,14.5,True,31.7,302.5,0.08,21.5,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4454.833,14.83,True,31.7,317.3,0.08,21.5,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4455.167,15.17,True,31.4,334.4,0.08,21.5,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4455.5,15.5,True,30.9,353.6,0.08,21.5,25.0,llm,8445.5,Occupied and grid is not in peak period.
+4455.833,15.83,True,30.3,374.8,0.08,21.5,25.0,llm,0.0,(cached) Occupied and grid is not in peak period.
+4456.167,16.17,True,29.4,397.5,0.34,21.5,25.5,llm,9605.0,"Grid is in peak period and carbon-intensive, so float cooling setpoint to warm end of comfort band."
+4456.5,16.5,True,28.4,421.2,0.34,21.5,25.5,llm,9448.5,"Grid is at peak and carbon-intensive, so float cooling setpoint to warm end of comfort band."
+4456.833,16.83,True,27.2,445.2,0.34,21.5,25.5,llm,0.0,"(cached) Grid is at peak and carbon-intensive, so float cooling setpoint to warm end of comfort band."
+4457.167,17.17,True,26.1,468.6,0.34,21.5,25.5,llm,10468.5,"Occupied and grid is in peak period, so setting cooling setpoint to warm end of comfort band."
+4457.5,17.5,True,25.0,490.9,0.34,21.5,25.5,llm,9680.2,"Grid is in peak period and cooling at warm end of comfort band to minimize expensive, dirty kWh."
+4457.833,17.83,True,23.9,511.0,0.34,21.5,25.5,llm,0.0,"(cached) Grid is in peak period and cooling at warm end of comfort band to minimize expensive, dirty kWh."
+4458.167,18.17,True,23.0,528.2,0.34,21.5,25.5,llm,0.0,"(cached) Grid is in peak period and cooling at warm end of comfort band to minimize expensive, dirty kWh."
+4458.5,18.5,True,22.5,542.0,0.34,21.5,25.0,llm,10219.8,"During grid peak period, float cooling setpoint to warm end of comfort band to minimize expensive and dirty kWh."
+4458.833,18.83,True,22.0,551.9,0.34,21.5,25.0,llm,0.0,"(cached) During grid peak period, float cooling setpoint to warm end of comfort band to minimize expensive and dirty kWh."
+4459.167,19.17,True,21.8,557.5,0.34,21.5,25.0,llm,0.0,"(cached) During grid peak period, float cooling setpoint to warm end of comfort band to minimize expensive and dirty kWh."
+4459.5,19.5,True,21.9,558.9,0.34,21.5,25.0,llm,0.0,"(cached) During grid peak period, float cooling setpoint to warm end of comfort band to minimize expensive and dirty kWh."
+4459.833,19.83,True,22.1,556.3,0.34,21.5,25.0,llm,0.0,"(cached) During grid peak period, float cooling setpoint to warm end of comfort band to minimize expensive and dirty kWh."
+4460.167,20.17,True,22.2,549.9,0.34,21.5,25.0,llm,0.0,"(cached) During grid peak period, float cooling setpoint to warm end of comfort band to minimize expensive and dirty kWh."
+4460.5,20.5,True,22.2,540.4,0.34,21.5,25.0,llm,0.0,"(cached) During grid peak period, float cooling setpoint to warm end of comfort band to minimize expensive and dirty kWh."
+4460.833,20.83,True,22.2,528.4,0.34,21.5,25.0,llm,0.0,"(cached) During grid peak period, float cooling setpoint to warm end of comfort band to minimize expensive and dirty kWh."
+4461.167,21.17,True,22.3,514.7,0.08,21.5,24.9,llm,9658.7,"Occupied and grid is not in peak period, so choose a slightly cooler setpoint for comfort."
+4461.5,21.5,True,22.5,500.0,0.08,21.5,24.9,llm,0.0,"(cached) Occupied and grid is not in peak period, so choose a slightly cooler setpoint for comfort."
+4461.833,21.83,True,22.7,485.0,0.08,21.5,24.9,llm,0.0,"(cached) Occupied and grid is not in peak period, so choose a slightly cooler setpoint for comfort."
+4462.167,22.17,True,22.8,470.3,0.08,21.5,24.9,llm,0.0,"(cached) Occupied and grid is not in peak period, so choose a slightly cooler setpoint for comfort."
+4462.5,22.5,True,22.8,456.4,0.08,21.5,24.9,llm,0.0,"(cached) Occupied and grid is not in peak period, so choose a slightly cooler setpoint for comfort."
+4462.833,22.83,True,22.8,443.6,0.08,21.5,24.9,llm,0.0,"(cached) Occupied and grid is not in peak period, so choose a slightly cooler setpoint for comfort."
+4463.167,23.17,False,22.9,432.2,0.08,15.6,28.0,llm,8360.0,It is nighttime and the building is unoccupied.
+4463.5,23.5,False,23.1,422.2,0.08,15.6,28.0,llm,9349.0,It is currently unoccupied and the grid is in a high-carbon window.
+4463.833,23.83,False,23.2,413.6,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4464.167,0.17,False,23.2,378.0,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4464.5,0.5,False,23.1,378.9,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4464.833,0.83,False,22.9,379.4,0.08,15.6,28.0,llm,9351.6,The building is unoccupied and it's a low-carbon grid period.
+4465.167,1.17,False,22.8,379.4,0.08,15.6,28.0,llm,0.0,(cached) The building is unoccupied and it's a low-carbon grid period.
+4465.5,1.5,False,22.8,378.9,0.08,15.6,28.0,llm,0.0,(cached) The building is unoccupied and it's a low-carbon grid period.
+4465.833,1.83,False,22.8,378.0,0.08,15.6,28.0,llm,0.0,(cached) The building is unoccupied and it's a low-carbon grid period.
+4466.167,2.17,False,22.7,376.5,0.08,15.6,28.0,llm,0.0,(cached) The building is unoccupied and it's a low-carbon grid period.
+4466.5,2.5,False,22.5,374.6,0.08,15.6,28.0,llm,0.0,(cached) The building is unoccupied and it's a low-carbon grid period.
+4466.833,2.83,False,22.3,372.2,0.08,15.6,28.0,llm,0.0,(cached) The building is unoccupied and it's a low-carbon grid period.
+4467.167,3.17,False,22.2,369.4,0.08,15.6,28.0,llm,0.0,(cached) The building is unoccupied and it's a low-carbon grid period.
+4467.5,3.5,False,22.2,366.1,0.08,15.6,28.0,llm,0.0,(cached) The building is unoccupied and it's a low-carbon grid period.
+4467.833,3.83,False,22.2,362.5,0.08,15.6,28.0,llm,0.0,(cached) The building is unoccupied and it's a low-carbon grid period.
+4468.167,4.17,False,22.2,358.5,0.08,15.6,28.0,llm,0.0,(cached) The building is unoccupied and it's a low-carbon grid period.
+4468.5,4.5,False,22.2,354.2,0.08,15.6,28.0,llm,0.0,(cached) The building is unoccupied and it's a low-carbon grid period.
+4468.833,4.83,False,22.2,349.5,0.08,15.6,28.0,llm,0.0,(cached) The building is unoccupied and it's a low-carbon grid period.
+4469.167,5.17,True,22.2,344.6,0.08,21.5,25.5,llm,9496.4,Occupied during non-peak grid period with moderate outdoor temperature.
+4469.5,5.5,True,22.2,339.5,0.08,21.5,25.5,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4469.833,5.83,True,22.2,334.2,0.08,21.5,25.5,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4470.167,6.17,True,22.4,328.8,0.08,21.5,25.5,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4470.5,6.5,True,22.8,323.2,0.08,21.5,25.5,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4470.833,6.83,True,23.1,317.6,0.08,21.5,25.0,llm,9614.1,Occupied during morning hours with moderate outdoor temperature and comfortable indoor temperature.
+4471.167,7.17,True,23.7,311.9,0.08,21.5,25.0,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature and comfortable indoor temperature.
+4471.5,7.5,True,24.5,306.3,0.08,21.5,25.0,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature and comfortable indoor temperature.
+4471.833,7.83,True,25.2,300.7,0.08,21.5,24.9,llm,10278.9,Occupied office with moderate outdoor temperature and low PMV; set cooling to warm end of comfort band.
+4472.167,8.17,True,25.9,295.3,0.08,21.5,24.9,llm,0.0,(cached) Occupied office with moderate outdoor temperature and low PMV; set cooling to warm end of comfort band.
+4472.5,8.5,True,26.4,290.0,0.08,21.5,24.9,llm,0.0,(cached) Occupied office with moderate outdoor temperature and low PMV; set cooling to warm end of comfort band.
+4472.833,8.83,True,26.9,284.9,0.08,21.5,24.9,llm,0.0,(cached) Occupied office with moderate outdoor temperature and low PMV; set cooling to warm end of comfort band.
+4473.167,9.17,True,27.3,280.1,0.08,21.5,25.0,llm,9391.7,Occupied office with moderate outdoor temperature and comfortable indoor temperature.
+4473.5,9.5,True,27.5,275.5,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and comfortable indoor temperature.
+4473.833,9.83,True,27.7,271.3,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and comfortable indoor temperature.
+4474.167,10.17,True,27.9,267.5,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and comfortable indoor temperature.
+4474.5,10.5,True,28.1,264.1,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and comfortable indoor temperature.
+4474.833,10.83,True,28.2,261.3,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and comfortable indoor temperature.
+4475.167,11.17,True,28.6,259.1,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and comfortable indoor temperature.
+4475.5,11.5,True,29.1,257.6,0.08,21.5,25.5,llm,9016.0,Occupied and grid is not in peak period.
+4475.833,11.83,True,29.7,256.9,0.08,21.5,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4476.167,12.17,True,30.3,257.3,0.08,21.5,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4476.5,12.5,True,30.9,258.7,0.08,21.5,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4476.833,12.83,True,31.4,261.5,0.08,21.0,25.0,llm,9535.8,Occupants are present and it is not a peak grid period.
+4477.167,13.17,True,31.8,265.9,0.08,21.0,25.0,llm,0.0,(cached) Occupants are present and it is not a peak grid period.
+4477.5,13.5,True,32.0,271.9,0.08,21.0,25.0,llm,0.0,(cached) Occupants are present and it is not a peak grid period.
+4477.833,13.83,True,32.1,280.0,0.08,21.0,25.0,llm,0.0,(cached) Occupants are present and it is not a peak grid period.
+4478.167,14.17,True,32.3,290.1,0.08,21.0,25.0,llm,0.0,(cached) Occupants are present and it is not a peak grid period.
+4478.5,14.5,True,32.5,302.5,0.08,21.0,25.0,llm,0.0,(cached) Occupants are present and it is not a peak grid period.
+4478.833,14.83,True,32.7,317.3,0.08,21.0,25.0,llm,0.0,(cached) Occupants are present and it is not a peak grid period.
+4479.167,15.17,True,32.4,334.4,0.08,21.0,25.0,llm,0.0,(cached) Occupants are present and it is not a peak grid period.
+4479.5,15.5,True,31.7,353.6,0.08,21.0,25.0,llm,0.0,(cached) Occupants are present and it is not a peak grid period.
+4479.833,15.83,True,31.0,374.8,0.08,21.0,25.5,llm,8801.7,Occupied and grid is not in peak period.
+4480.167,16.17,True,30.2,397.5,0.34,21.0,25.5,llm,9736.9,"Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4480.5,16.5,True,29.5,421.2,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4480.833,16.83,True,28.7,445.2,0.34,21.0,25.5,llm,10734.1,"Occupied and grid is in peak period, so float cooling setpoint to warm end of comfort band."
+4481.167,17.17,True,27.5,468.6,0.34,21.0,25.5,llm,0.0,"(cached) Occupied and grid is in peak period, so float cooling setpoint to warm end of comfort band."
+4481.5,17.5,True,25.8,490.9,0.34,21.0,25.5,llm,9283.5,"Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4481.833,17.83,True,24.1,511.0,0.34,21.0,25.5,llm,9299.1,"Occupied during peak grid period, so float cooling to warm end of comfort band."
+4482.167,18.17,True,23.3,528.2,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so float cooling to warm end of comfort band."
+4482.5,18.5,True,23.3,542.0,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so float cooling to warm end of comfort band."
+4482.833,18.83,True,23.3,551.9,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so float cooling to warm end of comfort band."
+4483.167,19.17,True,23.3,557.5,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so float cooling to warm end of comfort band."
+4483.5,19.5,True,23.3,558.9,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so float cooling to warm end of comfort band."
+4483.833,19.83,True,23.3,556.3,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so float cooling to warm end of comfort band."
+4484.167,20.17,True,23.3,549.9,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so float cooling to warm end of comfort band."
+4484.5,20.5,True,23.3,540.4,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so float cooling to warm end of comfort band."
+4484.833,20.83,True,23.3,528.4,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so float cooling to warm end of comfort band."
+4485.167,21.17,True,23.2,514.7,0.08,21.0,25.5,llm,8531.4,Occupied during peak hours with high grid carbon.
+4485.5,21.5,True,23.1,500.0,0.08,21.0,25.5,llm,0.0,(cached) Occupied during peak hours with high grid carbon.
+4485.833,21.83,True,22.9,485.0,0.08,21.0,25.5,llm,10036.0,Occupied building during non-peak grid period
+4486.167,22.17,True,22.8,470.3,0.08,21.0,25.5,llm,0.0,(cached) Occupied building during non-peak grid period
+4486.5,22.5,True,22.8,456.4,0.08,21.0,25.5,llm,0.0,(cached) Occupied building during non-peak grid period
+4486.833,22.83,True,22.8,443.6,0.08,21.0,25.5,llm,0.0,(cached) Occupied building during non-peak grid period
+4487.167,23.17,False,22.7,432.2,0.08,15.6,28.0,llm,9543.2,It is currently unoccupied and the grid is in a high-carbon window.
+4487.5,23.5,False,22.5,422.2,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4487.833,23.83,False,22.3,413.6,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4488.167,0.17,False,22.2,378.0,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4488.5,0.5,False,22.2,378.9,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4488.833,0.83,False,22.2,379.4,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4489.167,1.17,False,22.1,379.4,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4489.5,1.5,False,21.9,378.9,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4489.833,1.83,False,21.8,378.0,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4490.167,2.17,False,21.7,376.5,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4490.5,2.5,False,21.7,374.6,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4490.833,2.83,False,21.7,372.2,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4491.167,3.17,False,21.7,369.4,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4491.5,3.5,False,21.7,366.1,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4491.833,3.83,False,21.7,362.5,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4492.167,4.17,False,21.8,358.5,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4492.5,4.5,False,21.9,354.2,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4492.833,4.83,False,22.1,349.5,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4493.167,5.17,True,22.1,344.6,0.08,21.5,25.5,llm,8766.8,Occupied during a non-peak period with moderate outdoor temperature.
+4493.5,5.5,True,21.9,339.5,0.08,21.5,25.5,llm,0.0,(cached) Occupied during a non-peak period with moderate outdoor temperature.
+4493.833,5.83,True,21.8,334.2,0.08,21.5,25.5,llm,0.0,(cached) Occupied during a non-peak period with moderate outdoor temperature.
+4494.167,6.17,True,21.9,328.8,0.08,21.5,25.5,llm,0.0,(cached) Occupied during a non-peak period with moderate outdoor temperature.
+4494.5,6.5,True,22.2,323.2,0.08,21.5,25.5,llm,0.0,(cached) Occupied during a non-peak period with moderate outdoor temperature.
+4494.833,6.83,True,22.6,317.6,0.08,21.5,25.5,llm,0.0,(cached) Occupied during a non-peak period with moderate outdoor temperature.
+4495.167,7.17,True,23.2,311.9,0.08,21.5,25.0,llm,9351.1,Occupied during morning hours with moderate outdoor temperature and comfortable indoor temperature.
+4495.5,7.5,True,23.9,306.3,0.08,21.5,25.0,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature and comfortable indoor temperature.
+4495.833,7.83,True,24.6,300.7,0.08,21.5,25.0,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature and comfortable indoor temperature.
+4496.167,8.17,True,25.4,295.3,0.08,21.5,25.5,llm,8928.8,Occupied office during morning hours with moderate outdoor temperature.
+4496.5,8.5,True,26.1,290.0,0.08,21.5,25.5,llm,0.0,(cached) Occupied office during morning hours with moderate outdoor temperature.
+4496.833,8.83,True,26.8,284.9,0.08,21.5,25.5,llm,0.0,(cached) Occupied office during morning hours with moderate outdoor temperature.
+4497.167,9.17,True,27.5,280.1,0.08,21.5,25.0,llm,8857.6,Occupied office with moderate outdoor temperature and low grid carbon.
+4497.5,9.5,True,28.0,275.5,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and low grid carbon.
+4497.833,9.83,True,28.6,271.3,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and low grid carbon.
+4498.167,10.17,True,29.1,267.5,0.08,21.5,25.0,llm,8751.7,Occupied office with moderate outdoor temperature and comfortable indoor temperature.
+4498.5,10.5,True,29.4,264.1,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and comfortable indoor temperature.
+4498.833,10.83,True,29.8,261.3,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and comfortable indoor temperature.
+4499.167,11.17,True,30.2,259.1,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and comfortable indoor temperature.
+4499.5,11.5,True,30.6,257.6,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and comfortable indoor temperature.
+4499.833,11.83,True,30.9,256.9,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and comfortable indoor temperature.
+4500.167,12.17,True,31.1,257.3,0.08,21.5,25.5,llm,9121.4,Occupied during peak daytime hours with high outdoor temperature.
+4500.5,12.5,True,31.1,258.7,0.08,21.5,25.5,llm,0.0,(cached) Occupied during peak daytime hours with high outdoor temperature.
+4500.833,12.83,True,31.1,261.5,0.08,21.5,25.5,llm,0.0,(cached) Occupied during peak daytime hours with high outdoor temperature.
+4501.167,13.17,True,31.1,265.9,0.08,21.5,25.5,llm,0.0,(cached) Occupied during peak daytime hours with high outdoor temperature.
+4501.5,13.5,True,31.1,271.9,0.08,21.5,25.5,llm,0.0,(cached) Occupied during peak daytime hours with high outdoor temperature.
+4501.833,13.83,True,31.1,280.0,0.08,21.5,25.5,llm,0.0,(cached) Occupied during peak daytime hours with high outdoor temperature.
+4502.167,14.17,True,31.2,290.1,0.08,21.5,25.5,llm,0.0,(cached) Occupied during peak daytime hours with high outdoor temperature.
+4502.5,14.5,True,31.4,302.5,0.08,21.5,25.5,llm,0.0,(cached) Occupied during peak daytime hours with high outdoor temperature.
+4502.833,14.83,True,31.6,317.3,0.08,21.5,25.5,llm,0.0,(cached) Occupied during peak daytime hours with high outdoor temperature.
+4503.167,15.17,True,31.6,334.4,0.08,21.5,25.5,llm,0.0,(cached) Occupied during peak daytime hours with high outdoor temperature.
+4503.5,15.5,True,31.4,353.6,0.08,21.5,25.5,llm,0.0,(cached) Occupied during peak daytime hours with high outdoor temperature.
+4503.833,15.83,True,31.2,374.8,0.08,21.5,25.5,llm,0.0,(cached) Occupied during peak daytime hours with high outdoor temperature.
+4504.167,16.17,False,31.1,397.5,0.34,15.6,28.0,llm,9271.6,It is a weekend and the building is unoccupied during the grid peak period.
+4504.5,16.5,False,31.1,421.2,0.34,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied during the grid peak period.
+4504.833,16.83,False,31.1,445.2,0.34,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied during the grid peak period.
+4505.167,17.17,False,30.8,468.6,0.34,15.6,29.0,llm,9381.0,"It is a weekend evening during the grid peak period, so we set back to save energy."
+4505.5,17.5,False,30.2,490.9,0.34,15.6,29.0,llm,0.0,"(cached) It is a weekend evening during the grid peak period, so we set back to save energy."
+4505.833,17.83,False,29.7,511.0,0.34,15.6,29.0,llm,0.0,"(cached) It is a weekend evening during the grid peak period, so we set back to save energy."
+4506.167,18.17,False,28.9,528.2,0.34,15.6,28.0,llm,8961.9,It is a weekend evening during the grid peak period with high carbon intensity.
+4506.5,18.5,False,28.0,542.0,0.34,15.6,28.0,llm,0.0,(cached) It is a weekend evening during the grid peak period with high carbon intensity.
+4506.833,18.83,False,27.1,551.9,0.34,15.6,28.0,llm,0.0,(cached) It is a weekend evening during the grid peak period with high carbon intensity.
+4507.167,19.17,False,26.4,557.5,0.34,15.6,29.0,llm,9490.8,"It is a weekend evening during the grid peak period, so we set back to save energy."
+4507.5,19.5,False,25.9,558.9,0.34,15.6,29.0,llm,0.0,"(cached) It is a weekend evening during the grid peak period, so we set back to save energy."
+4507.833,19.83,False,25.3,556.3,0.34,15.6,29.0,llm,0.0,"(cached) It is a weekend evening during the grid peak period, so we set back to save energy."
+4508.167,20.17,False,25.0,549.9,0.34,15.6,28.0,llm,8362.6,Setting back to save energy during the grid peak period
+4508.5,20.5,False,25.0,540.4,0.34,15.6,28.0,llm,0.0,(cached) Setting back to save energy during the grid peak period
+4508.833,20.83,False,25.0,528.4,0.34,15.6,28.0,llm,0.0,(cached) Setting back to save energy during the grid peak period
+4509.167,21.17,False,24.9,514.7,0.08,15.6,28.0,llm,8796.3,It is a weekend evening with low grid carbon and price.
+4509.5,21.5,False,24.7,500.0,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.
+4509.833,21.83,False,24.5,485.0,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.
+4510.167,22.17,False,24.4,470.3,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.
+4510.5,22.5,False,24.4,456.4,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.
+4510.833,22.83,False,24.4,443.6,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.
+4511.167,23.17,False,24.3,432.2,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.
+4511.5,23.5,False,24.1,422.2,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.
+4511.833,23.83,False,24.0,413.6,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.
+4512.167,0.17,False,23.9,378.0,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.
+4512.5,0.5,False,23.9,378.9,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.
+4512.833,0.83,False,23.9,379.4,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.
+4513.167,1.17,False,23.8,379.4,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.
+4513.5,1.5,False,23.6,378.9,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.
+4513.833,1.83,False,23.4,378.0,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.
+4514.167,2.17,False,23.3,376.5,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.
+4514.5,2.5,False,23.3,374.6,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.
+4514.833,2.83,False,23.3,372.2,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.
+4515.167,3.17,False,23.3,369.4,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.
+4515.5,3.5,False,23.3,366.1,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.
+4515.833,3.83,False,23.3,362.5,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.
+4516.167,4.17,False,23.2,358.5,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.
+4516.5,4.5,False,23.1,354.2,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.
+4516.833,4.83,False,22.9,349.5,0.08,15.6,28.0,llm,9780.8,Setting back to save energy during unoccupied period on a weekend.
+4517.167,5.17,False,22.8,344.6,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period on a weekend.
+4517.5,5.5,False,22.8,339.5,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period on a weekend.
+4517.833,5.83,False,22.8,334.2,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period on a weekend.
+4518.167,6.17,False,23.1,328.8,0.08,15.6,28.0,llm,9095.2,It is early morning on a weekend and the building is unoccupied.
+4518.5,6.5,False,23.6,323.2,0.08,15.6,28.0,llm,0.0,(cached) It is early morning on a weekend and the building is unoccupied.
+4518.833,6.83,False,24.1,317.6,0.08,15.6,28.0,llm,0.0,(cached) It is early morning on a weekend and the building is unoccupied.
+4519.167,7.17,False,24.8,311.9,0.08,15.6,28.0,llm,0.0,(cached) It is early morning on a weekend and the building is unoccupied.
+4519.5,7.5,False,25.5,306.3,0.08,15.6,28.0,llm,8807.0,It is a weekend morning and the building is unoccupied.
+4519.833,7.83,False,26.3,300.7,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend morning and the building is unoccupied.
+4520.167,8.17,False,27.0,295.3,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend morning and the building is unoccupied.
+4520.5,8.5,False,27.5,290.0,0.08,15.6,28.0,llm,8794.0,Setting back to save energy on an unoccupied weekend morning.
+4520.833,8.83,False,28.0,284.9,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy on an unoccupied weekend morning.
+4521.167,9.17,False,28.5,280.1,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy on an unoccupied weekend morning.
+4521.5,9.5,False,28.9,275.5,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy on an unoccupied weekend morning.
+4521.833,9.83,False,29.2,271.3,0.08,15.6,28.0,llm,9531.9,Setting back to save energy since the building is unoccupied and it's not a peak grid period.
+4522.167,10.17,False,29.6,267.5,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy since the building is unoccupied and it's not a peak grid period.
+4522.5,10.5,False,30.0,264.1,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy since the building is unoccupied and it's not a peak grid period.
+4522.833,10.83,False,30.4,261.3,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy since the building is unoccupied and it's not a peak grid period.
+4523.167,11.17,False,30.7,259.1,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy since the building is unoccupied and it's not a peak grid period.
+4523.5,11.5,False,30.9,257.6,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy since the building is unoccupied and it's not a peak grid period.
+4523.833,11.83,False,31.0,256.9,0.08,15.6,29.0,llm,8803.1,It is a weekend and the building is unoccupied.
+4524.167,12.17,False,31.1,257.3,0.08,15.6,29.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4524.5,12.5,False,31.1,258.7,0.08,15.6,29.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4524.833,12.83,False,31.1,261.5,0.08,15.6,29.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4525.167,13.17,False,31.1,265.9,0.08,15.6,29.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4525.5,13.5,False,31.1,271.9,0.08,15.6,29.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4525.833,13.83,False,31.1,280.0,0.08,15.6,29.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4526.167,14.17,False,30.9,290.1,0.08,15.6,28.0,llm,9821.3,It is currently unoccupied and the grid is in a high-carbon window.
+4526.5,14.5,False,30.6,302.5,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4526.833,14.83,False,30.2,317.3,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4527.167,15.17,False,30.4,334.4,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4527.5,15.5,False,31.1,353.6,0.08,15.6,29.0,llm,9220.2,Setting back to save energy on a weekend with high outdoor temperature.
+4527.833,15.83,False,31.8,374.8,0.08,15.6,29.0,llm,0.0,(cached) Setting back to save energy on a weekend with high outdoor temperature.
+4528.167,16.17,False,31.6,397.5,0.34,15.6,28.0,llm,8977.2,It is a weekend and the building is unoccupied.
+4528.5,16.5,False,30.2,421.2,0.34,15.6,29.0,llm,9221.8,Setting back to save energy during the grid peak period.
+4528.833,16.83,False,29.0,445.2,0.34,15.6,28.0,llm,10356.6,It is a weekend and the building is unoccupied.
+4529.167,17.17,False,28.3,468.6,0.34,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4529.5,17.5,False,28.3,490.9,0.34,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4529.833,17.83,False,28.3,511.0,0.34,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4530.167,18.17,False,27.6,528.2,0.34,15.6,28.0,llm,0.1,(cached) It is a weekend and the building is unoccupied.
+4530.5,18.5,False,26.1,542.0,0.34,15.6,29.0,llm,9150.8,Setting back to save energy during the grid peak period.
+4530.833,18.83,False,24.6,551.9,0.34,15.6,28.0,llm,9044.0,Setting back to save energy during the grid peak period.
+4531.167,19.17,False,23.9,557.5,0.34,15.6,28.0,llm,0.0,(cached) Setting back to save energy during the grid peak period.
+4531.5,19.5,False,23.9,558.9,0.34,15.6,28.0,llm,0.0,(cached) Setting back to save energy during the grid peak period.
+4531.833,19.83,False,23.9,556.3,0.34,15.6,28.0,llm,0.0,(cached) Setting back to save energy during the grid peak period.
+4532.167,20.17,False,24.0,549.9,0.34,15.6,28.0,llm,0.0,(cached) Setting back to save energy during the grid peak period.
+4532.5,20.5,False,24.1,540.4,0.34,15.6,28.0,llm,0.0,(cached) Setting back to save energy during the grid peak period.
+4532.833,20.83,False,24.3,528.4,0.34,15.6,28.0,llm,0.0,(cached) Setting back to save energy during the grid peak period.
+4533.167,21.17,False,24.4,514.7,0.08,15.6,28.0,llm,10400.4,It is currently unoccupied and the grid is in a high-carbon window.
+4533.5,21.5,False,24.4,500.0,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4533.833,21.83,False,24.4,485.0,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4534.167,22.17,False,24.5,470.3,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4534.5,22.5,False,24.7,456.4,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4534.833,22.83,False,24.9,443.6,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4535.167,23.17,False,25.0,432.2,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4535.5,23.5,False,25.0,422.2,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4535.833,23.83,False,25.0,413.6,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4536.167,0.17,False,24.9,378.0,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4536.5,0.5,False,24.7,378.9,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4536.833,0.83,False,24.5,379.4,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4537.167,1.17,False,24.3,379.4,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4537.5,1.5,False,24.1,378.9,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4537.833,1.83,False,24.0,378.0,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4538.167,2.17,False,23.9,376.5,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4538.5,2.5,False,23.9,374.6,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4538.833,2.83,False,23.9,372.2,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4539.167,3.17,False,23.8,369.4,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4539.5,3.5,False,23.6,366.1,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4539.833,3.83,False,23.4,362.5,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4540.167,4.17,False,23.3,358.5,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4540.5,4.5,False,23.3,354.2,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4540.833,4.83,False,23.3,349.5,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is in a high-carbon window.
+4541.167,5.17,True,23.4,344.6,0.08,21.5,25.5,llm,10246.7,Occupied during non-peak grid period with moderate outdoor temperature.
+4541.5,5.5,True,23.6,339.5,0.08,21.5,25.5,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4541.833,5.83,True,23.8,334.2,0.08,21.5,25.5,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4542.167,6.17,True,24.2,328.8,0.08,21.5,25.5,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4542.5,6.5,True,24.8,323.2,0.08,21.5,25.5,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4542.833,6.83,True,25.3,317.6,0.08,21.0,25.0,llm,9685.2,Occupied during morning hours with moderate outdoor temperature and comfortable indoor temperature.
+4543.167,7.17,True,26.0,311.9,0.08,21.0,25.0,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature and comfortable indoor temperature.
+4543.5,7.5,True,26.7,306.3,0.08,21.0,25.0,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature and comfortable indoor temperature.
+4543.833,7.83,True,27.4,300.7,0.08,21.0,25.5,llm,8869.7,Occupied during morning hours with moderate outdoor temperature.
+4544.167,8.17,True,28.1,295.3,0.08,21.0,25.5,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature.
+4544.5,8.5,True,28.6,290.0,0.08,21.0,25.5,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature.
+4544.833,8.83,True,29.1,284.9,0.08,21.0,25.5,llm,9320.2,Occupied office with moderate outdoor temperature and high grid carbon emissions.
+4545.167,9.17,True,29.6,280.1,0.08,21.0,25.5,llm,0.0,(cached) Occupied office with moderate outdoor temperature and high grid carbon emissions.
+4545.5,9.5,True,30.0,275.5,0.08,21.0,25.5,llm,0.0,(cached) Occupied office with moderate outdoor temperature and high grid carbon emissions.
+4545.833,9.83,True,30.4,271.3,0.08,21.0,25.5,llm,0.0,(cached) Occupied office with moderate outdoor temperature and high grid carbon emissions.
+4546.167,10.17,True,30.4,267.5,0.08,21.0,25.5,llm,0.0,(cached) Occupied office with moderate outdoor temperature and high grid carbon emissions.
+4546.5,10.5,True,30.0,264.1,0.08,21.0,25.5,llm,0.0,(cached) Occupied office with moderate outdoor temperature and high grid carbon emissions.
+4546.833,10.83,True,29.6,261.3,0.08,21.0,25.5,llm,0.0,(cached) Occupied office with moderate outdoor temperature and high grid carbon emissions.
+4547.167,11.17,True,29.6,259.1,0.08,21.0,25.5,llm,0.0,(cached) Occupied office with moderate outdoor temperature and high grid carbon emissions.
+4547.5,11.5,True,30.0,257.6,0.08,21.0,25.5,llm,0.0,(cached) Occupied office with moderate outdoor temperature and high grid carbon emissions.
+4547.833,11.83,True,30.4,256.9,0.08,21.0,25.5,llm,0.0,(cached) Occupied office with moderate outdoor temperature and high grid carbon emissions.
+4548.167,12.17,True,30.8,257.3,0.08,21.0,25.5,llm,0.0,(cached) Occupied office with moderate outdoor temperature and high grid carbon emissions.
+4548.5,12.5,True,31.1,258.7,0.08,21.0,25.5,llm,8938.5,Occupied during peak daytime hours with high outdoor temperature.
+4548.833,12.83,True,31.5,261.5,0.08,21.0,25.5,llm,0.0,(cached) Occupied during peak daytime hours with high outdoor temperature.
+4549.167,13.17,True,31.8,265.9,0.08,21.0,25.5,llm,0.0,(cached) Occupied during peak daytime hours with high outdoor temperature.
+4549.5,13.5,True,32.0,271.9,0.08,21.0,25.5,llm,0.0,(cached) Occupied during peak daytime hours with high outdoor temperature.
+4549.833,13.83,True,32.1,280.0,0.08,21.0,25.5,llm,0.0,(cached) Occupied during peak daytime hours with high outdoor temperature.
+4550.167,14.17,True,32.1,290.1,0.08,21.0,25.5,llm,0.0,(cached) Occupied during peak daytime hours with high outdoor temperature.
+4550.5,14.5,True,32.0,302.5,0.08,21.0,25.5,llm,0.0,(cached) Occupied during peak daytime hours with high outdoor temperature.
+4550.833,14.83,True,31.8,317.3,0.08,21.0,25.5,llm,0.0,(cached) Occupied during peak daytime hours with high outdoor temperature.
+4551.167,15.17,True,31.7,334.4,0.08,21.0,25.5,llm,0.1,(cached) Occupied during peak daytime hours with high outdoor temperature.
+4551.5,15.5,True,31.7,353.6,0.08,21.0,25.5,llm,0.0,(cached) Occupied during peak daytime hours with high outdoor temperature.
+4551.833,15.83,True,31.7,374.8,0.08,21.0,25.5,llm,0.0,(cached) Occupied during peak daytime hours with high outdoor temperature.
+4552.167,16.17,True,31.6,397.5,0.34,21.0,25.5,llm,9823.3,"Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4552.5,16.5,True,31.4,421.2,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4552.833,16.83,True,31.2,445.2,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4553.167,17.17,True,30.9,468.6,0.34,21.0,25.5,llm,9890.5,"Occupied and grid is in peak period, so float cooling setpoint to warm end of comfort band."
+4553.5,17.5,True,30.6,490.9,0.34,21.0,25.5,llm,0.0,"(cached) Occupied and grid is in peak period, so float cooling setpoint to warm end of comfort band."
+4553.833,17.83,True,30.2,511.0,0.34,21.0,25.5,llm,0.0,"(cached) Occupied and grid is in peak period, so float cooling setpoint to warm end of comfort band."
+4554.167,18.17,True,29.8,528.2,0.34,21.0,25.5,llm,0.0,"(cached) Occupied and grid is in peak period, so float cooling setpoint to warm end of comfort band."
+4554.5,18.5,True,29.4,542.0,0.34,21.0,25.5,llm,0.0,"(cached) Occupied and grid is in peak period, so float cooling setpoint to warm end of comfort band."
+4554.833,18.83,True,29.1,551.9,0.34,21.0,25.5,llm,0.0,"(cached) Occupied and grid is in peak period, so float cooling setpoint to warm end of comfort band."
+4555.167,19.17,True,28.7,557.5,0.34,21.0,25.5,llm,9675.2,"Occupied and grid is in peak period, so float cooling setpoint to warm end of comfort band."
+4555.5,19.5,True,28.4,558.9,0.34,21.0,25.5,llm,0.0,"(cached) Occupied and grid is in peak period, so float cooling setpoint to warm end of comfort band."
+4555.833,19.83,True,28.0,556.3,0.34,21.0,25.5,llm,0.0,"(cached) Occupied and grid is in peak period, so float cooling setpoint to warm end of comfort band."
+4556.167,20.17,True,27.8,549.9,0.34,21.0,25.5,llm,0.0,"(cached) Occupied and grid is in peak period, so float cooling setpoint to warm end of comfort band."
+4556.5,20.5,True,27.8,540.4,0.34,21.0,25.5,llm,0.0,"(cached) Occupied and grid is in peak period, so float cooling setpoint to warm end of comfort band."
+4556.833,20.83,True,27.8,528.4,0.34,21.0,25.5,llm,0.0,"(cached) Occupied and grid is in peak period, so float cooling setpoint to warm end of comfort band."
+4557.167,21.17,True,27.6,514.7,0.08,21.0,25.5,llm,8580.3,Occupied building during non-peak grid period.
+4557.5,21.5,True,27.2,500.0,0.08,21.0,25.5,llm,0.0,(cached) Occupied building during non-peak grid period.
+4557.833,21.83,True,26.9,485.0,0.08,21.0,25.5,llm,9223.3,Occupied building during non-peak grid period.
+4558.167,22.17,True,26.8,470.3,0.08,21.0,25.5,llm,0.0,(cached) Occupied building during non-peak grid period.
+4558.5,22.5,True,26.9,456.4,0.08,21.0,25.5,llm,0.0,(cached) Occupied building during non-peak grid period.
+4558.833,22.83,True,27.1,443.6,0.08,21.0,25.5,llm,8704.9,Occupied and grid is not in peak period.
+4559.167,23.17,False,27.1,432.2,0.08,15.6,28.0,llm,8646.7,It is nighttime and the building is unoccupied.
+4559.5,23.5,False,26.9,422.2,0.08,15.6,29.0,llm,9799.1,Setting back to save energy during the night and off-peak grid period.
+4559.833,23.83,False,26.8,413.6,0.08,15.6,29.0,llm,0.0,(cached) Setting back to save energy during the night and off-peak grid period.
+4560.167,0.17,False,26.7,378.0,0.08,15.6,29.0,llm,0.0,(cached) Setting back to save energy during the night and off-peak grid period.
+4560.5,0.5,False,26.7,378.9,0.08,15.6,29.0,llm,0.0,(cached) Setting back to save energy during the night and off-peak grid period.
+4560.833,0.83,False,26.7,379.4,0.08,15.6,29.0,llm,0.0,(cached) Setting back to save energy during the night and off-peak grid period.
+4561.167,1.17,False,26.7,379.4,0.08,15.6,29.0,llm,0.0,(cached) Setting back to save energy during the night and off-peak grid period.
+4561.5,1.5,False,26.7,378.9,0.08,15.6,29.0,llm,0.0,(cached) Setting back to save energy during the night and off-peak grid period.
+4561.833,1.83,False,26.7,378.0,0.08,15.6,29.0,llm,0.0,(cached) Setting back to save energy during the night and off-peak grid period.
+4562.167,2.17,False,26.6,376.5,0.08,15.6,29.0,llm,0.0,(cached) Setting back to save energy during the night and off-peak grid period.
+4562.5,2.5,False,26.4,374.6,0.08,15.6,29.0,llm,0.0,(cached) Setting back to save energy during the night and off-peak grid period.
+4562.833,2.83,False,26.2,372.2,0.08,15.6,29.0,llm,0.0,(cached) Setting back to save energy during the night and off-peak grid period.
+4563.167,3.17,False,26.1,369.4,0.08,15.6,29.0,llm,0.0,(cached) Setting back to save energy during the night and off-peak grid period.
+4563.5,3.5,False,26.1,366.1,0.08,15.6,29.0,llm,0.0,(cached) Setting back to save energy during the night and off-peak grid period.
+4563.833,3.83,False,26.1,362.5,0.08,15.6,29.0,llm,0.0,(cached) Setting back to save energy during the night and off-peak grid period.
+4564.167,4.17,False,26.1,358.5,0.08,15.6,29.0,llm,0.0,(cached) Setting back to save energy during the night and off-peak grid period.
+4564.5,4.5,False,26.1,354.2,0.08,15.6,29.0,llm,0.0,(cached) Setting back to save energy during the night and off-peak grid period.
+4564.833,4.83,False,26.1,349.5,0.08,15.6,29.0,llm,0.0,(cached) Setting back to save energy during the night and off-peak grid period.
+4565.167,5.17,True,25.9,344.6,0.08,21.5,25.5,llm,9314.3,Occupied during non-peak grid period with moderate outdoor temperature.
+4565.5,5.5,True,25.6,339.5,0.08,21.5,25.5,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4565.833,5.83,True,25.2,334.2,0.08,21.5,25.5,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4566.167,6.17,True,25.5,328.8,0.08,21.5,25.5,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4566.5,6.5,True,26.4,323.2,0.08,21.5,25.5,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4566.833,6.83,True,27.3,317.6,0.08,21.5,25.0,llm,9231.4,Occupants are present and it is not a peak grid period.
+4567.167,7.17,True,28.2,311.9,0.08,21.5,25.0,llm,0.0,(cached) Occupants are present and it is not a peak grid period.
+4567.5,7.5,True,28.9,306.3,0.08,21.5,25.0,llm,0.0,(cached) Occupants are present and it is not a peak grid period.
+4567.833,7.83,True,29.6,300.7,0.08,21.5,24.9,llm,9220.3,Occupants are present and it is not a peak grid period.
+4568.167,8.17,True,30.2,295.3,0.08,21.5,24.9,llm,0.0,(cached) Occupants are present and it is not a peak grid period.
+4568.5,8.5,True,30.6,290.0,0.08,21.5,24.9,llm,0.0,(cached) Occupants are present and it is not a peak grid period.
+4568.833,8.83,True,30.9,284.9,0.08,21.5,24.9,llm,0.0,(cached) Occupants are present and it is not a peak grid period.
+4569.167,9.17,True,31.0,280.1,0.08,21.5,25.0,llm,9626.0,Occupied office with high outdoor temperature; setting cooling to warm end of comfort band.
+4569.5,9.5,True,30.9,275.5,0.08,21.5,25.0,llm,9103.6,Occupied office with moderate outdoor temperature and comfortable indoor temperature.
+4569.833,9.83,True,30.7,271.3,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and comfortable indoor temperature.
+4570.167,10.17,True,30.6,267.5,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and comfortable indoor temperature.
+4570.5,10.5,True,30.6,264.1,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and comfortable indoor temperature.
+4570.833,10.83,True,30.6,261.3,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and comfortable indoor temperature.
+4571.167,11.17,True,30.8,259.1,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and comfortable indoor temperature.
+4571.5,11.5,True,31.1,257.6,0.08,21.5,25.5,llm,8852.9,Occupied and grid is not in peak period.
+4571.833,11.83,True,31.5,256.9,0.08,21.5,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4572.167,12.17,True,31.7,257.3,0.08,21.5,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4572.5,12.5,True,31.7,258.7,0.08,21.5,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4572.833,12.83,True,31.7,261.5,0.08,21.5,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4573.167,13.17,True,31.8,265.9,0.08,21.5,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4573.5,13.5,True,32.0,271.9,0.08,21.5,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4573.833,13.83,True,32.1,280.0,0.08,21.5,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4574.167,14.17,True,32.3,290.1,0.08,21.5,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4574.5,14.5,True,32.5,302.5,0.08,21.5,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4574.833,14.83,True,32.7,317.3,0.08,21.5,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4575.167,15.17,True,32.7,334.4,0.08,21.5,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4575.5,15.5,True,32.5,353.6,0.08,21.5,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4575.833,15.83,True,32.3,374.8,0.08,21.5,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4576.167,16.17,True,32.1,397.5,0.34,21.5,25.5,llm,9724.2,"During grid peak period and high outdoor temperature, float cooling setpoint to warm end of comfort band."
+4576.5,16.5,True,32.0,421.2,0.34,21.5,25.5,llm,0.0,"(cached) During grid peak period and high outdoor temperature, float cooling setpoint to warm end of comfort band."
+4576.833,16.83,True,31.8,445.2,0.34,21.5,25.5,llm,0.0,"(cached) During grid peak period and high outdoor temperature, float cooling setpoint to warm end of comfort band."
+4577.167,17.17,True,31.6,468.6,0.34,21.5,25.5,llm,0.0,"(cached) During grid peak period and high outdoor temperature, float cooling setpoint to warm end of comfort band."
+4577.5,17.5,True,31.4,490.9,0.34,21.5,25.5,llm,0.0,"(cached) During grid peak period and high outdoor temperature, float cooling setpoint to warm end of comfort band."
+4577.833,17.83,True,31.2,511.0,0.34,21.5,25.5,llm,0.0,"(cached) During grid peak period and high outdoor temperature, float cooling setpoint to warm end of comfort band."
+4578.167,18.17,True,30.9,528.2,0.34,21.5,25.5,llm,10447.4,"Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4578.5,18.5,True,30.6,542.0,0.34,21.5,25.5,llm,0.0,"(cached) Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4578.833,18.83,True,30.2,551.9,0.34,21.5,25.5,llm,0.0,"(cached) Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4579.167,19.17,True,29.7,557.5,0.34,21.5,25.5,llm,0.0,"(cached) Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4579.5,19.5,True,29.1,558.9,0.34,21.5,25.5,llm,0.0,"(cached) Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4579.833,19.83,True,28.6,556.3,0.34,21.5,25.5,llm,9953.8,"Occupied during peak grid period, so choosing warm end of comfort band for cooling setpoint."
+4580.167,20.17,True,28.3,549.9,0.34,21.5,25.5,llm,0.0,"(cached) Occupied during peak grid period, so choosing warm end of comfort band for cooling setpoint."
+4580.5,20.5,True,28.3,540.4,0.34,21.5,25.5,llm,0.0,"(cached) Occupied during peak grid period, so choosing warm end of comfort band for cooling setpoint."
+4580.833,20.83,True,28.3,528.4,0.34,21.5,25.5,llm,0.0,"(cached) Occupied during peak grid period, so choosing warm end of comfort band for cooling setpoint."
+4581.167,21.17,True,28.1,514.7,0.08,21.0,25.0,llm,8796.2,Occupied during non-peak grid period with moderate outdoor temperature.
+4581.5,21.5,True,27.8,500.0,0.08,21.0,25.0,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4581.833,21.83,True,27.4,485.0,0.08,21.0,25.0,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4582.167,22.17,True,27.2,470.3,0.08,21.0,25.0,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4582.5,22.5,True,27.2,456.4,0.08,21.0,25.0,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4582.833,22.83,True,27.2,443.6,0.08,21.0,25.0,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4583.167,23.17,False,27.2,432.2,0.08,15.6,28.0,llm,8676.1,It is nighttime and the building is unoccupied.
+4583.5,23.5,False,27.2,422.2,0.08,15.6,28.0,llm,0.0,(cached) It is nighttime and the building is unoccupied.
+4583.833,23.83,False,27.2,413.6,0.08,15.6,28.0,llm,0.0,(cached) It is nighttime and the building is unoccupied.
+4584.167,0.17,False,27.1,378.0,0.08,15.6,28.0,llm,0.0,(cached) It is nighttime and the building is unoccupied.
+4584.5,0.5,False,26.9,378.9,0.08,15.6,28.0,llm,8703.2,Setting back to save energy since the building is unoccupied.
+4584.833,0.83,False,26.8,379.4,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy since the building is unoccupied.
+4585.167,1.17,False,26.7,379.4,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy since the building is unoccupied.
+4585.5,1.5,False,26.7,378.9,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy since the building is unoccupied.
+4585.833,1.83,False,26.7,378.0,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy since the building is unoccupied.
+4586.167,2.17,False,26.7,376.5,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy since the building is unoccupied.
+4586.5,2.5,False,26.7,374.6,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy since the building is unoccupied.
+4586.833,2.83,False,26.7,372.2,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy since the building is unoccupied.
+4587.167,3.17,False,26.7,369.4,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy since the building is unoccupied.
+4587.5,3.5,False,26.7,366.1,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy since the building is unoccupied.
+4587.833,3.83,False,26.7,362.5,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy since the building is unoccupied.
+4588.167,4.17,False,26.7,358.5,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy since the building is unoccupied.
+4588.5,4.5,False,26.7,354.2,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy since the building is unoccupied.
+4588.833,4.83,False,26.7,349.5,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy since the building is unoccupied.
+4589.167,5.17,True,26.7,344.6,0.08,21.5,25.5,llm,9291.9,Occupied during non-peak grid period with moderate outdoor temperature.
+4589.5,5.5,True,26.7,339.5,0.08,21.5,25.5,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4589.833,5.83,True,26.7,334.2,0.08,21.5,25.5,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4590.167,6.17,True,27.1,328.8,0.08,21.0,25.0,llm,8569.5,Occupied during morning hours with moderate outdoor temperature.
+4590.5,6.5,True,27.8,323.2,0.08,21.0,25.0,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature.
+4590.833,6.83,True,28.5,317.6,0.08,21.0,25.0,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature.
+4591.167,7.17,True,29.1,311.9,0.08,21.0,25.5,llm,8551.7,Occupied office during morning hours with high outdoor temperature.
+4591.5,7.5,True,29.4,306.3,0.08,21.0,25.5,llm,0.0,(cached) Occupied office during morning hours with high outdoor temperature.
+4591.833,7.83,True,29.8,300.7,0.08,21.0,25.5,llm,0.0,(cached) Occupied office during morning hours with high outdoor temperature.
+4592.167,8.17,True,30.1,295.3,0.08,21.0,25.5,llm,0.0,(cached) Occupied office during morning hours with high outdoor temperature.
+4592.5,8.5,True,30.3,290.0,0.08,21.0,25.5,llm,0.0,(cached) Occupied office during morning hours with high outdoor temperature.
+4592.833,8.83,True,30.5,284.9,0.08,21.0,25.5,llm,0.0,(cached) Occupied office during morning hours with high outdoor temperature.
+4593.167,9.17,True,30.6,280.1,0.08,21.0,25.5,llm,0.0,(cached) Occupied office during morning hours with high outdoor temperature.
+4593.5,9.5,True,30.6,275.5,0.08,21.0,25.5,llm,0.0,(cached) Occupied office during morning hours with high outdoor temperature.
+4593.833,9.83,True,30.6,271.3,0.08,21.0,25.5,llm,0.0,(cached) Occupied office during morning hours with high outdoor temperature.
+4594.167,10.17,True,30.8,267.5,0.08,21.0,25.5,llm,0.0,(cached) Occupied office during morning hours with high outdoor temperature.
+4594.5,10.5,True,31.1,264.1,0.08,21.0,25.5,llm,9196.0,"Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4594.833,10.83,True,31.5,261.3,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4595.167,11.17,True,31.8,259.1,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4595.5,11.5,True,32.0,257.6,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4595.833,11.83,True,32.1,256.9,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4596.167,12.17,True,32.3,257.3,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4596.5,12.5,True,32.5,258.7,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4596.833,12.83,True,32.7,261.5,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4597.167,13.17,True,32.7,265.9,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4597.5,13.5,True,32.5,271.9,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4597.833,13.83,True,32.3,280.0,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4598.167,14.17,True,32.3,290.1,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4598.5,14.5,True,32.5,302.5,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4598.833,14.83,True,32.7,317.3,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4599.167,15.17,True,32.4,334.4,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4599.5,15.5,True,31.7,353.6,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4599.833,15.83,True,31.0,374.8,0.08,21.0,25.5,llm,9671.2,"Occupied during peak period, so keeping cooling at warm end of comfort band to minimize expensive and dirty kWh."
+4600.167,16.17,True,30.5,397.5,0.34,21.0,25.5,llm,9431.8,"During grid peak period and high outdoor temperature, float cooling setpoint to warm end of comfort band."
+4600.5,16.5,True,30.3,421.2,0.34,21.0,25.5,llm,0.0,"(cached) During grid peak period and high outdoor temperature, float cooling setpoint to warm end of comfort band."
+4600.833,16.83,True,30.1,445.2,0.34,21.0,25.5,llm,0.0,"(cached) During grid peak period and high outdoor temperature, float cooling setpoint to warm end of comfort band."
+4601.167,17.17,True,30.0,468.6,0.34,21.0,25.5,llm,0.0,"(cached) During grid peak period and high outdoor temperature, float cooling setpoint to warm end of comfort band."
+4601.5,17.5,True,30.0,490.9,0.34,21.0,25.5,llm,0.0,"(cached) During grid peak period and high outdoor temperature, float cooling setpoint to warm end of comfort band."
+4601.833,17.83,True,30.0,511.0,0.34,21.0,25.5,llm,0.0,"(cached) During grid peak period and high outdoor temperature, float cooling setpoint to warm end of comfort band."
+4602.167,18.17,True,29.7,528.2,0.34,21.0,25.5,llm,0.0,"(cached) During grid peak period and high outdoor temperature, float cooling setpoint to warm end of comfort band."
+4602.5,18.5,True,29.1,542.0,0.34,21.0,25.5,llm,0.0,"(cached) During grid peak period and high outdoor temperature, float cooling setpoint to warm end of comfort band."
+4602.833,18.83,True,28.6,551.9,0.34,21.0,25.5,llm,8019.5,Occupied during grid peak period
+4603.167,19.17,True,28.2,557.5,0.34,21.0,25.5,llm,0.0,(cached) Occupied during grid peak period
+4603.5,19.5,True,28.1,558.9,0.34,21.0,25.5,llm,0.0,(cached) Occupied during grid peak period
+4603.833,19.83,True,27.9,556.3,0.34,21.0,25.5,llm,0.0,(cached) Occupied during grid peak period
+4604.167,20.17,True,27.8,549.9,0.34,21.0,25.5,llm,0.0,(cached) Occupied during grid peak period
+4604.5,20.5,True,27.8,540.4,0.34,21.0,25.5,llm,0.0,(cached) Occupied during grid peak period
+4604.833,20.83,True,27.8,528.4,0.34,21.0,25.5,llm,0.0,(cached) Occupied during grid peak period
+4605.167,21.17,True,27.8,514.7,0.08,21.0,25.5,llm,8399.2,Occupied and grid is not in peak period.
+4605.5,21.5,True,27.8,500.0,0.08,21.0,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4605.833,21.83,True,27.8,485.0,0.08,21.0,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4606.167,22.17,True,27.7,470.3,0.08,21.0,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4606.5,22.5,True,27.5,456.4,0.08,21.0,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4606.833,22.83,True,27.3,443.6,0.08,21.0,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4607.167,23.17,False,27.1,432.2,0.08,15.6,28.0,llm,8416.5,It is nighttime and the building is unoccupied.
+4607.5,23.5,False,26.9,422.2,0.08,15.6,28.0,llm,8385.1,Setting back to save energy during unoccupied period.
+4607.833,23.83,False,26.8,413.6,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period.
+4608.167,0.17,False,26.7,378.0,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period.
+4608.5,0.5,False,26.7,378.9,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period.
+4608.833,0.83,False,26.7,379.4,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period.
+4609.167,1.17,False,26.6,379.4,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period.
+4609.5,1.5,False,26.4,378.9,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period.
+4609.833,1.83,False,26.2,378.0,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period.
+4610.167,2.17,False,26.0,376.5,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period.
+4610.5,2.5,False,25.9,374.6,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period.
+4610.833,2.83,False,25.7,372.2,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period.
+4611.167,3.17,False,25.6,369.4,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period.
+4611.5,3.5,False,25.6,366.1,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period.
+4611.833,3.83,False,25.6,362.5,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period.
+4612.167,4.17,False,25.4,358.5,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period.
+4612.5,4.5,False,25.0,354.2,0.08,15.6,28.0,llm,8385.5,Setting back to save energy during unoccupied period
+4612.833,4.83,False,24.6,349.5,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4613.167,5.17,True,24.5,344.6,0.08,21.5,25.5,llm,8254.8,Occupied and not during grid peak period
+4613.5,5.5,True,24.7,339.5,0.08,21.5,25.5,llm,0.0,(cached) Occupied and not during grid peak period
+4613.833,5.83,True,24.9,334.2,0.08,21.5,25.5,llm,0.0,(cached) Occupied and not during grid peak period
+4614.167,6.17,True,25.3,328.8,0.08,21.0,25.0,llm,8802.7,Occupied during morning hours with moderate outdoor temperature and low grid carbon.
+4614.5,6.5,True,25.9,323.2,0.08,21.0,25.0,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature and low grid carbon.
+4614.833,6.83,True,26.4,317.6,0.08,21.0,25.0,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature and low grid carbon.
+4615.167,7.17,True,26.8,311.9,0.08,21.0,25.0,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature and low grid carbon.
+4615.5,7.5,True,26.9,306.3,0.08,21.0,25.0,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature and low grid carbon.
+4615.833,7.83,True,27.1,300.7,0.08,21.0,25.5,llm,8408.5,Occupied during morning hours with moderate outdoor temperature.
+4616.167,8.17,True,27.4,295.3,0.08,21.0,25.5,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature.
+4616.5,8.5,True,27.8,290.0,0.08,21.0,25.5,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature.
+4616.833,8.83,True,28.1,284.9,0.08,21.0,25.5,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature.
+4617.167,9.17,True,28.7,280.1,0.08,21.0,25.5,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature.
+4617.5,9.5,True,29.5,275.5,0.08,21.0,25.5,llm,9158.3,"Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4617.833,9.83,True,30.2,271.3,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4618.167,10.17,True,30.9,267.5,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4618.5,10.5,True,31.4,264.1,0.08,21.0,25.5,llm,8625.7,Occupied during morning hours with high outdoor temperature.
+4618.833,10.83,True,31.9,261.3,0.08,21.0,25.5,llm,0.0,(cached) Occupied during morning hours with high outdoor temperature.
+4619.167,11.17,True,31.9,259.1,0.08,21.0,25.5,llm,0.0,(cached) Occupied during morning hours with high outdoor temperature.
+4619.5,11.5,True,31.4,257.6,0.08,21.0,25.5,llm,0.0,(cached) Occupied during morning hours with high outdoor temperature.
+4619.833,11.83,True,30.9,256.9,0.08,21.0,25.5,llm,9107.1,"Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4620.167,12.17,True,30.0,257.3,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4620.5,12.5,True,28.9,258.7,0.08,21.0,25.5,llm,8551.3,Occupied during peak daytime hours with high outdoor temperature.
+4620.833,12.83,True,27.8,261.5,0.08,21.0,25.5,llm,0.0,(cached) Occupied during peak daytime hours with high outdoor temperature.
+4621.167,13.17,True,27.6,265.9,0.08,21.0,25.5,llm,0.0,(cached) Occupied during peak daytime hours with high outdoor temperature.
+4621.5,13.5,True,28.3,271.9,0.08,21.0,25.5,llm,0.0,(cached) Occupied during peak daytime hours with high outdoor temperature.
+4621.833,13.83,True,29.0,280.0,0.08,21.0,25.5,llm,8506.1,Occupied and grid is not in peak period.
+4622.167,14.17,True,28.9,290.1,0.08,21.0,25.5,llm,8713.8,Occupied office with moderate outdoor temperature and high grid carbon emissions.
+4622.5,14.5,True,27.8,302.5,0.08,21.0,25.5,llm,0.0,(cached) Occupied office with moderate outdoor temperature and high grid carbon emissions.
+4622.833,14.83,True,26.7,317.3,0.08,21.0,25.5,llm,8159.1,Occupied office during moderate outdoor temperature.
+4623.167,15.17,True,26.2,334.4,0.08,21.0,25.5,llm,0.0,(cached) Occupied office during moderate outdoor temperature.
+4623.5,15.5,True,26.4,353.6,0.08,21.0,25.5,llm,0.0,(cached) Occupied office during moderate outdoor temperature.
+4623.833,15.83,True,26.6,374.8,0.08,21.0,25.5,llm,0.0,(cached) Occupied office during moderate outdoor temperature.
+4624.167,16.17,True,26.4,397.5,0.34,21.0,25.5,llm,9200.7,"Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4624.5,16.5,True,25.9,421.2,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4624.833,16.83,True,25.3,445.2,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4625.167,17.17,True,25.1,468.6,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4625.5,17.5,True,25.3,490.9,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4625.833,17.83,True,25.5,511.0,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4626.167,18.17,True,25.2,528.2,0.34,21.0,25.5,llm,0.0,"(cached) Occupied during peak grid period, so setting cooling to warm end of comfort band."
+4626.5,18.5,True,24.5,542.0,0.34,21.0,25.5,llm,9680.1,"During grid peak period, float cooling setpoint to warm end of comfort band to minimize expensive and dirty kWh."
+4626.833,18.83,True,23.7,551.9,0.34,21.0,25.5,llm,0.0,"(cached) During grid peak period, float cooling setpoint to warm end of comfort band to minimize expensive and dirty kWh."
+4627.167,19.17,True,23.3,557.5,0.34,21.0,25.5,llm,0.0,"(cached) During grid peak period, float cooling setpoint to warm end of comfort band to minimize expensive and dirty kWh."
+4627.5,19.5,True,23.3,558.9,0.34,21.0,25.5,llm,0.0,"(cached) During grid peak period, float cooling setpoint to warm end of comfort band to minimize expensive and dirty kWh."
+4627.833,19.83,True,23.3,556.3,0.34,21.0,25.5,llm,0.0,"(cached) During grid peak period, float cooling setpoint to warm end of comfort band to minimize expensive and dirty kWh."
+4628.167,20.17,True,23.4,549.9,0.34,21.0,25.5,llm,0.0,"(cached) During grid peak period, float cooling setpoint to warm end of comfort band to minimize expensive and dirty kWh."
+4628.5,20.5,True,23.6,540.4,0.34,21.0,25.5,llm,0.0,"(cached) During grid peak period, float cooling setpoint to warm end of comfort band to minimize expensive and dirty kWh."
+4628.833,20.83,True,23.8,528.4,0.34,21.0,25.5,llm,0.0,"(cached) During grid peak period, float cooling setpoint to warm end of comfort band to minimize expensive and dirty kWh."
+4629.167,21.17,True,24.0,514.7,0.08,21.0,25.5,llm,8447.0,Occupied and grid is not in peak period.
+4629.5,21.5,True,24.1,500.0,0.08,21.0,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4629.833,21.83,True,24.3,485.0,0.08,21.0,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4630.167,22.17,True,24.2,470.3,0.08,21.0,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4630.5,22.5,True,23.9,456.4,0.08,21.0,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4630.833,22.83,True,23.5,443.6,0.08,21.0,25.5,llm,0.0,(cached) Occupied and grid is not in peak period.
+4631.167,23.17,False,23.3,432.2,0.08,15.6,28.0,llm,8574.5,It is currently unoccupied and outside the grid peak period.
+4631.5,23.5,False,23.3,422.2,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and outside the grid peak period.
+4631.833,23.83,False,23.3,413.6,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and outside the grid peak period.
+4632.167,0.17,False,23.3,378.0,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and outside the grid peak period.
+4632.5,0.5,False,23.3,378.9,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and outside the grid peak period.
+4632.833,0.83,False,23.3,379.4,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and outside the grid peak period.
+4633.167,1.17,False,23.1,379.4,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and outside the grid peak period.
+4633.5,1.5,False,22.8,378.9,0.08,15.6,29.0,llm,8370.2,Setting back to save energy during unoccupied period
+4633.833,1.83,False,22.4,378.0,0.08,15.6,29.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4634.167,2.17,False,22.2,376.5,0.08,15.6,29.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4634.5,2.5,False,22.2,374.6,0.08,15.6,29.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4634.833,2.83,False,22.2,372.2,0.08,15.6,29.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4635.167,3.17,False,22.2,369.4,0.08,15.6,29.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4635.5,3.5,False,22.2,366.1,0.08,15.6,29.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4635.833,3.83,False,22.2,362.5,0.08,15.6,29.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4636.167,4.17,False,22.2,358.5,0.08,15.6,29.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4636.5,4.5,False,22.2,354.2,0.08,15.6,29.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4636.833,4.83,False,22.2,349.5,0.08,15.6,29.0,llm,0.0,(cached) Setting back to save energy during unoccupied period
+4637.167,5.17,True,22.1,344.6,0.08,21.5,25.5,llm,8928.7,Occupied during non-peak grid period with moderate outdoor temperature.
+4637.5,5.5,True,21.9,339.5,0.08,21.5,25.5,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4637.833,5.83,True,21.8,334.2,0.08,21.5,25.5,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4638.167,6.17,True,22.0,328.8,0.08,21.5,25.5,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4638.5,6.5,True,22.5,323.2,0.08,21.5,25.5,llm,0.0,(cached) Occupied during non-peak grid period with moderate outdoor temperature.
+4638.833,6.83,True,23.0,317.6,0.08,21.5,25.0,llm,8797.0,Occupied office with moderate outdoor temperature and low grid carbon.
+4639.167,7.17,True,23.8,311.9,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and low grid carbon.
+4639.5,7.5,True,24.7,306.3,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and low grid carbon.
+4639.833,7.83,True,25.6,300.7,0.08,21.5,24.9,llm,8915.5,Occupants are present and it is not a peak grid period.
+4640.167,8.17,True,26.4,295.3,0.08,21.5,24.9,llm,0.0,(cached) Occupants are present and it is not a peak grid period.
+4640.5,8.5,True,27.0,290.0,0.08,21.5,24.9,llm,0.0,(cached) Occupants are present and it is not a peak grid period.
+4640.833,8.83,True,27.5,284.9,0.08,21.5,25.0,llm,9074.3,Occupied office with moderate outdoor temperature and high grid carbon emissions.
+4641.167,9.17,True,28.0,280.1,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and high grid carbon emissions.
+4641.5,9.5,True,28.4,275.5,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and high grid carbon emissions.
+4641.833,9.83,True,28.7,271.3,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and high grid carbon emissions.
+4642.167,10.17,True,29.0,267.5,0.08,21.5,25.0,llm,0.0,(cached) Occupied office with moderate outdoor temperature and high grid carbon emissions.
+4642.5,10.5,True,29.1,264.1,0.08,21.5,24.9,llm,8795.1,Occupied and grid is not in peak period.
+4642.833,10.83,True,29.3,261.3,0.08,21.5,24.9,llm,0.0,(cached) Occupied and grid is not in peak period.
+4643.167,11.17,True,29.5,259.1,0.08,21.5,24.9,llm,0.0,(cached) Occupied and grid is not in peak period.
+4643.5,11.5,True,29.7,257.6,0.08,21.5,24.9,llm,0.0,(cached) Occupied and grid is not in peak period.
+4643.833,11.83,True,29.9,256.9,0.08,21.5,24.9,llm,0.0,(cached) Occupied and grid is not in peak period.
+4644.167,12.17,True,30.2,257.3,0.08,21.5,24.9,llm,0.0,(cached) Occupied and grid is not in peak period.
+4644.5,12.5,True,30.6,258.7,0.08,21.5,24.9,llm,0.0,(cached) Occupied and grid is not in peak period.
+4644.833,12.83,True,30.9,261.5,0.08,21.5,24.9,llm,0.0,(cached) Occupied and grid is not in peak period.
+4645.167,13.17,True,31.3,265.9,0.08,21.5,25.0,llm,8807.4,Occupants present and grid is not in peak period.
+4645.5,13.5,True,31.7,271.9,0.08,21.5,25.0,llm,0.0,(cached) Occupants present and grid is not in peak period.
+4645.833,13.83,True,32.0,280.0,0.08,21.5,25.0,llm,0.0,(cached) Occupants present and grid is not in peak period.
+4646.167,14.17,True,32.3,290.1,0.08,21.5,25.0,llm,0.0,(cached) Occupants present and grid is not in peak period.
+4646.5,14.5,True,32.5,302.5,0.08,21.5,25.0,llm,0.0,(cached) Occupants present and grid is not in peak period.
+4646.833,14.83,True,32.7,317.3,0.08,21.5,25.0,llm,0.0,(cached) Occupants present and grid is not in peak period.
+4647.167,15.17,True,32.8,334.4,0.08,21.5,25.0,llm,0.0,(cached) Occupants present and grid is not in peak period.
+4647.5,15.5,True,32.8,353.6,0.08,21.5,25.0,llm,0.0,(cached) Occupants present and grid is not in peak period.
+4647.833,15.83,True,32.8,374.8,0.08,21.5,25.0,llm,0.0,(cached) Occupants present and grid is not in peak period.
+4648.167,16.17,True,32.8,397.5,0.34,21.5,25.5,llm,9825.4,"Grid is in peak period and carbon-intensive, so float cooling setpoint to warm end of comfort band."
+4648.5,16.5,True,32.8,421.2,0.34,21.5,25.5,llm,0.0,"(cached) Grid is in peak period and carbon-intensive, so float cooling setpoint to warm end of comfort band."
+4648.833,16.83,True,32.8,445.2,0.34,21.5,25.5,llm,0.0,"(cached) Grid is in peak period and carbon-intensive, so float cooling setpoint to warm end of comfort band."
+4649.167,17.17,True,32.5,468.6,0.34,21.5,25.5,llm,0.0,"(cached) Grid is in peak period and carbon-intensive, so float cooling setpoint to warm end of comfort band."
+4649.5,17.5,True,31.9,490.9,0.34,21.5,25.5,llm,0.0,"(cached) Grid is in peak period and carbon-intensive, so float cooling setpoint to warm end of comfort band."
+4649.833,17.83,True,31.4,511.0,0.34,21.5,25.5,llm,0.0,"(cached) Grid is in peak period and carbon-intensive, so float cooling setpoint to warm end of comfort band."
+4650.167,18.17,True,31.0,528.2,0.34,21.5,25.5,llm,0.0,"(cached) Grid is in peak period and carbon-intensive, so float cooling setpoint to warm end of comfort band."
+4650.5,18.5,True,30.9,542.0,0.34,21.5,25.0,llm,9784.2,"During grid peak period, float cooling setpoint to warm end of comfort band to save expensive, dirty kWh."
+4650.833,18.83,True,30.7,551.9,0.34,21.5,25.0,llm,0.0,"(cached) During grid peak period, float cooling setpoint to warm end of comfort band to save expensive, dirty kWh."
+4651.167,19.17,True,30.3,557.5,0.34,21.5,25.0,llm,0.0,"(cached) During grid peak period, float cooling setpoint to warm end of comfort band to save expensive, dirty kWh."
+4651.5,19.5,True,29.8,558.9,0.34,21.5,25.0,llm,0.0,"(cached) During grid peak period, float cooling setpoint to warm end of comfort band to save expensive, dirty kWh."
+4651.833,19.83,True,29.2,556.3,0.34,21.5,25.0,llm,0.0,"(cached) During grid peak period, float cooling setpoint to warm end of comfort band to save expensive, dirty kWh."
+4652.167,20.17,True,28.8,549.9,0.34,21.5,25.5,llm,9437.2,"Grid is in peak period and carbon-intensive, so float cooling setpoint to warm end of comfort band."
+4652.5,20.5,True,28.6,540.4,0.34,21.5,25.5,llm,0.0,"(cached) Grid is in peak period and carbon-intensive, so float cooling setpoint to warm end of comfort band."
+4652.833,20.83,True,28.4,528.4,0.34,21.5,25.5,llm,0.0,"(cached) Grid is in peak period and carbon-intensive, so float cooling setpoint to warm end of comfort band."
+4653.167,21.17,True,28.1,514.7,0.08,21.0,25.0,llm,8772.4,Occupied during evening peak period with high grid carbon and price.
+4653.5,21.5,True,27.8,500.0,0.08,21.0,25.0,llm,0.0,(cached) Occupied during evening peak period with high grid carbon and price.
+4653.833,21.83,True,27.4,485.0,0.08,21.0,25.0,llm,0.0,(cached) Occupied during evening peak period with high grid carbon and price.
+4654.167,22.17,True,27.2,470.3,0.08,21.0,25.0,llm,0.0,(cached) Occupied during evening peak period with high grid carbon and price.
+4654.5,22.5,True,27.2,456.4,0.08,21.0,25.0,llm,0.0,(cached) Occupied during evening peak period with high grid carbon and price.
+4654.833,22.83,True,27.2,443.6,0.08,21.0,25.0,llm,0.0,(cached) Occupied during evening peak period with high grid carbon and price.
+4655.167,23.17,False,27.2,432.2,0.08,15.6,28.0,llm,8488.2,Setting back to save energy during unoccupied period at night.
+4655.5,23.5,False,27.2,422.2,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period at night.
+4655.833,23.83,False,27.2,413.6,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period at night.
+4656.167,0.17,False,27.1,378.0,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period at night.
+4656.5,0.5,False,26.9,378.9,0.08,15.6,28.0,llm,8306.4,Setting back to save energy during unoccupied period.
+4656.833,0.83,False,26.8,379.4,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period.
+4657.167,1.17,False,26.5,379.4,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period.
+4657.5,1.5,False,26.1,378.9,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period.
+4657.833,1.83,False,25.8,378.0,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period.
+4658.167,2.17,False,25.6,376.5,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period.
+4658.5,2.5,False,25.6,374.6,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period.
+4658.833,2.83,False,25.6,372.2,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period.
+4659.167,3.17,False,25.5,369.4,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period.
+4659.5,3.5,False,25.3,366.1,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period.
+4659.833,3.83,False,25.1,362.5,0.08,15.6,28.0,llm,0.0,(cached) Setting back to save energy during unoccupied period.
+4660.167,4.17,False,25.0,358.5,0.08,15.6,28.0,llm,8698.5,It is currently unoccupied and the grid is not in peak period.
+4660.5,4.5,False,25.0,354.2,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is not in peak period.
+4660.833,4.83,False,25.0,349.5,0.08,15.6,28.0,llm,0.0,(cached) It is currently unoccupied and the grid is not in peak period.
+4661.167,5.17,True,24.8,344.6,0.08,21.0,25.5,llm,8756.9,Occupied during morning hours with moderate outdoor temperature and low grid carbon.
+4661.5,5.5,True,24.4,339.5,0.08,21.0,25.5,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature and low grid carbon.
+4661.833,5.83,True,24.1,334.2,0.08,21.0,25.5,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature and low grid carbon.
+4662.167,6.17,True,24.1,328.8,0.08,21.0,25.5,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature and low grid carbon.
+4662.5,6.5,True,24.4,323.2,0.08,21.0,25.5,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature and low grid carbon.
+4662.833,6.83,True,24.8,317.6,0.08,21.0,25.5,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature and low grid carbon.
+4663.167,7.17,True,25.5,311.9,0.08,21.0,25.5,llm,8314.6,Occupied during morning hours with moderate outdoor temperature.
+4663.5,7.5,True,26.4,306.3,0.08,21.0,25.5,llm,0.0,(cached) Occupied during morning hours with moderate outdoor temperature.
+4663.833,7.83,True,27.3,300.7,0.08,21.0,25.5,llm,8404.6,Occupied office during morning hours with moderate outdoor temperature.
+4664.167,8.17,True,28.1,295.3,0.08,21.0,25.5,llm,0.0,(cached) Occupied office during morning hours with moderate outdoor temperature.
+4664.5,8.5,True,28.6,290.0,0.08,21.0,25.5,llm,0.0,(cached) Occupied office during morning hours with moderate outdoor temperature.
+4664.833,8.83,True,29.1,284.9,0.08,21.0,25.5,llm,8526.9,Occupied office with moderate outdoor temperature and low grid carbon.
+4665.167,9.17,True,29.5,280.1,0.08,21.0,25.5,llm,0.0,(cached) Occupied office with moderate outdoor temperature and low grid carbon.
+4665.5,9.5,True,29.7,275.5,0.08,21.0,25.5,llm,0.0,(cached) Occupied office with moderate outdoor temperature and low grid carbon.
+4665.833,9.83,True,29.9,271.3,0.08,21.0,25.5,llm,0.0,(cached) Occupied office with moderate outdoor temperature and low grid carbon.
+4666.167,10.17,True,30.2,267.5,0.08,21.0,25.5,llm,0.0,(cached) Occupied office with moderate outdoor temperature and low grid carbon.
+4666.5,10.5,True,30.6,264.1,0.08,21.0,25.5,llm,0.0,(cached) Occupied office with moderate outdoor temperature and low grid carbon.
+4666.833,10.83,True,30.9,261.3,0.08,21.0,25.5,llm,0.0,(cached) Occupied office with moderate outdoor temperature and low grid carbon.
+4667.167,11.17,True,31.1,259.1,0.08,21.0,25.5,llm,9037.4,"Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4667.5,11.5,True,31.1,257.6,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4667.833,11.83,True,31.1,256.9,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4668.167,12.17,True,31.3,257.3,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4668.5,12.5,True,31.7,258.7,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4668.833,12.83,True,32.0,261.5,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4669.167,13.17,True,32.3,265.9,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4669.5,13.5,True,32.5,271.9,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4669.833,13.83,True,32.7,280.0,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4670.167,14.17,True,32.8,290.1,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4670.5,14.5,True,32.8,302.5,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4670.833,14.83,True,32.8,317.3,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4671.167,15.17,True,32.8,334.4,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4671.5,15.5,True,32.8,353.6,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4671.833,15.83,True,32.8,374.8,0.08,21.0,25.5,llm,0.0,"(cached) Occupied office with high outdoor temperature, so maintaining current cooling setpoint for comfort."
+4672.167,16.17,False,32.8,397.5,0.34,15.6,28.0,llm,9009.9,It is a weekend and the building is unoccupied.
+4672.5,16.5,False,32.8,421.2,0.34,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4672.833,16.83,False,32.8,445.2,0.34,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4673.167,17.17,False,32.6,468.6,0.34,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4673.5,17.5,False,32.2,490.9,0.34,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4673.833,17.83,False,31.9,511.0,0.34,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4674.167,18.17,False,31.4,528.2,0.34,15.6,28.0,llm,0.0,(cached) It is a weekend and the building is unoccupied.
+4674.5,18.5,False,30.9,542.0,0.34,15.6,29.0,llm,8722.7,Setting back to save energy during the grid peak period.
+4674.833,18.83,False,30.3,551.9,0.34,15.6,29.0,llm,0.0,(cached) Setting back to save energy during the grid peak period.
+4675.167,19.17,False,29.7,557.5,0.34,15.6,29.0,llm,0.0,(cached) Setting back to save energy during the grid peak period.
+4675.5,19.5,False,29.1,558.9,0.34,15.6,29.0,llm,0.0,(cached) Setting back to save energy during the grid peak period.
+4675.833,19.83,False,28.6,556.3,0.34,15.6,28.5,llm,8926.4,Setting back to save energy during the grid peak period
+4676.167,20.17,False,28.1,549.9,0.34,15.6,28.5,llm,0.0,(cached) Setting back to save energy during the grid peak period
+4676.5,20.5,False,27.8,540.4,0.34,15.6,28.5,llm,0.0,(cached) Setting back to save energy during the grid peak period
+4676.833,20.83,False,27.4,528.4,0.34,15.6,28.5,llm,0.0,(cached) Setting back to save energy during the grid peak period
+4677.167,21.17,False,27.1,514.7,0.08,15.6,29.0,llm,10109.1,"It is a weekend evening with low grid carbon and price, so we can set back to save energy."
+4677.5,21.5,False,26.9,500.0,0.08,15.6,28.0,llm,9091.7,It is a weekend evening with low grid carbon and price.
+4677.833,21.83,False,26.8,485.0,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.
+4678.167,22.17,False,26.7,470.3,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.
+4678.5,22.5,False,26.7,456.4,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.
+4678.833,22.83,False,26.7,443.6,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.
+4679.167,23.17,False,26.4,432.2,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.
+4679.5,23.5,False,25.9,422.2,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.
+4679.833,23.83,False,25.3,413.6,0.08,15.6,28.0,llm,0.0,(cached) It is a weekend evening with low grid carbon and price.

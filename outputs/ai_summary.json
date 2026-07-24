@@ -1,0 +1,18 @@
+{
+  "label": "ai",
+  "return_code": 0,
+  "wall_seconds": 0.0,
+  "sim_steps": 2016,
+  "total_elec_kwh": 2529.491,
+  "total_hvac_kwh": 1049.426,
+  "total_cool_kwh": 668.281,
+  "total_fans_kwh": 381.145,
+  "total_gas_kwh": 116.816,
+  "total_cost_usd": 326.272,
+  "total_carbon_kg": 875.54,
+  "mean_occupied_abs_pmv": 0.2496,
+  "max_occupied_abs_pmv": 0.518,
+  "pct_occupied_steps_pmv_ok": 100.0,
+  "n_llm_calls": 1008,
+  "n_fallbacks": 0
+}
