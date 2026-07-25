@@ -1,4 +1,4 @@
-# Eco-Loop Building Agent — System Architecture
+# Eco-Loop Building Agent - System Architecture
 
 An autonomous, closed-loop control system that pairs a **physics-based EnergyPlus
 simulation** with an **open-source LLM (llama3.1:8b)** to run a building's HVAC in
