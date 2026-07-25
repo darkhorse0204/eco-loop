@@ -36,3 +36,9 @@ Thumbs.db
 # generated pitch-deck artifacts (rebuild with scripts/make_pitch.py)
 docs/*.pdf
 docs/_deck_preview.png
+
+# submission-prep materials (kept local, not part of the product repo)
+docs/DEMO_SCRIPT.md
+docs/PRESENTATION.md
+docs/sih_pitch.html
+scripts/make_pitch.py

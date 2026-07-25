@@ -145,12 +145,6 @@ python -m mcp_server.server
 This speaks the Model Context Protocol over stdio. In an MCP client, register it with
 command `python`, arguments `-m mcp_server.server`.
 
-**Pitch deck** — rebuild the 6-slide submission deck:
-```bash
-python scripts/make_pitch.py
-```
-Open `docs/sih_pitch.html` and Print → Save as PDF (landscape).
-
 ---
 
 ## 7. Changing settings

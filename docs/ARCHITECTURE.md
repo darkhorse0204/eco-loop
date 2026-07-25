@@ -9,30 +9,55 @@ live simulation with no human in the loop.
 
 ## 1. The closed loop at a glance
 
+```mermaid
+flowchart LR
+    subgraph TWIN["EnergyPlus digital twin"]
+        SIM["Building simulation<br/>DOE small office, Tampa"]
+    end
+    subgraph BRAIN["Cognitive engine"]
+        AGENT["LLM agent<br/>llama3.1:8b, tool-calling"]
+        CACHE["Semantic cache"]
+        FALL["Deterministic fallback"]
+    end
+    COMF["PMV comfort<br/>ISO 7730"]
+    GRID["Grid signals<br/>carbon + price"]
+    GUARD["Guardrail<br/>comfort + IAQ clamp"]
+
+    SIM -->|"sensors: temps, CO2, humidity, occupancy, energy"| AGENT
+    COMF --> AGENT
+    GRID --> AGENT
+    CACHE -.->|"reuse when unchanged"| AGENT
+    FALL -.->|"on timeout or error"| AGENT
+    AGENT -->|"set_hvac_setpoints"| GUARD
+    GUARD -->|"safe setpoints via actuators"| SIM
 ```
-                ┌──────────────────────────────────────────────────────────┐
-                │                    EnergyPlus 25.1 (Runtime API)           │
-                │   DOE small office · Tampa TMY3 · 10-min timestep          │
-                └───────▲───────────────────────────────────┬──────────────┘
-   inject setpoints     │ set_actuator_value                │ get_variable/meter
-   (Zone Temp Control)  │                                   ▼ stream sensors
-                ┌───────┴───────────┐        ┌──────────────────────────────┐
-                │   Guardrail        │◀───────│  Runner (callbacks)           │
-                │  comfort envelope  │        │  begin_system_timestep → act  │
-                │  hard clamp        │        │  end_zone_timestep   → sense  │
-                └───────▲───────────┘        └───────────────┬──────────────┘
-                        │ safe setpoints                     │ Snapshot (JSON)
-                        │                                    ▼
-                ┌───────┴────────────────────────────────────────────────────┐
-                │  Cognitive engine                                           │
-                │   ├─ LLM agent (Ollama llama3.1:8b, tool-calling)           │
-                │   │     tool: set_hvac_setpoints(heating, cooling, why)     │
-                │   ├─ semantic cache (call only on regime change)            │
-                │   └─ deterministic fallback (grid-aware ECM policy)         │
-                └─────────────────────────────────────────────────────────────┘
-                        ▲                         ▲
-                        │ carbon + price          │ PMV comfort (ISO 7730)
-                 GridSignals                  ComfortModel
+
+*Read it as a loop:* the twin streams sensors to the agent; the agent proposes
+setpoints by calling a tool; the guardrail clamps them into the safe comfort/IAQ
+envelope; the safe setpoints are injected back into the twin. Then it repeats.
+
+### A single decision, step by step
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant EP as EnergyPlus
+    participant R as Runner
+    participant A as LLM agent
+    participant G as Guardrail
+    Note over EP,G: repeats every 15 min of simulated time
+    EP->>R: stream sensors (temps, CO2, occupancy, meters)
+    R->>R: compute PMV and read grid carbon + price
+    R->>A: send compact state snapshot (small JSON)
+    alt situation unchanged
+        A-->>R: return cached decision (0 ms)
+    else new situation
+        A->>A: query llama3.1:8b via tool-call
+        A-->>R: set_hvac_setpoints(cooling, heating, reason)
+    end
+    Note right of A: on timeout or error, fall back to the rule controller
+    R->>G: hand over proposed setpoints
+    G->>EP: write clamped safe setpoints (actuators)
 ```
 
 The **same tools** are also published over the **Model Context Protocol**

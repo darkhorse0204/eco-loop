@@ -130,13 +130,12 @@ scripts/
   setup.py                one-time download of EnergyPlus + the AI model
   build_model.py          builds the building model (Tampa, CO₂ tracking on)
   make_report.py          builds outputs/report.html (the savings dashboard)
-  make_pitch.py           builds the 6-slide submission deck
   demo_self_correction.py the self-healing demo
   probe_api_data.py       lists every sensor/control EnergyPlus exposes
 models/baseline.idf       the office building model
 weather/                  the Tampa weather file
 outputs/                  results: charts, CSVs, summary.json, report.html
-docs/                     ARCHITECTURE, DEPLOYMENT, DEMO_SCRIPT, PRESENTATION, the deck
+docs/                     ARCHITECTURE (with diagrams), DEPLOYMENT
 ```
 
 ---
@@ -155,8 +154,8 @@ docs/                     ARCHITECTURE, DEPLOYMENT, DEMO_SCRIPT, PRESENTATION, t
 | Quantified kWh **and cost** savings, comfort held | table above · `outputs/report.html` |
 | Baseline + runtime-modified `.idf` files | `models/baseline.idf`, `outputs/ai_effective.idf` |
 | System architecture document | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) |
-| Demo video | script in [docs/DEMO_SCRIPT.md](docs/DEMO_SCRIPT.md) |
-| Presentation | [docs/PRESENTATION.md](docs/PRESENTATION.md) + `docs/sih_pitch.html` |
+| Demo video | recorded live from `python -m src.orchestrator` (submitted separately) |
+| Presentation | slide deck (submitted separately) |
 
 **Scored against the judging criteria:** robust closed loop that never crashes
 (System Integration), real measured energy + cost + carbon savings (Efficiency),
@@ -169,9 +168,7 @@ comfort *and* air quality both maintained (Comfort & Constraints), tool-calling 
 ## 📚 Documentation
 
 - **[docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)** — full setup, run, share & troubleshoot guide (start here).
-- **[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)** — how the system is built, in depth.
-- **[docs/DEMO_SCRIPT.md](docs/DEMO_SCRIPT.md)** — the 3-minute demo video script.
-- **[docs/PRESENTATION.md](docs/PRESENTATION.md)** — slide-by-slide presentation content.
+- **[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)** — how the system is built, in depth (with diagrams).
 
 ---
 
