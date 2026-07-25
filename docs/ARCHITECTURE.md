@@ -196,7 +196,29 @@ Cost and carbon fall **more** than raw kWh — the agent is optimising *when* to
 energy, not just *how much*. That is the signature of intelligent, grid-aware
 control rather than blunt setback.
 
-## 11. Repository map
+## 11. Ablation — does the LLM actually beat rules?
+
+The obvious challenge is *"why an LLM at all — couldn't a rule do this?"* So we ran a
+third controller: a **hand-tuned deterministic rule policy** (`RuleController`,
+occupancy- and grid-aware), on the **identical** building and weather. Run
+`python scripts/ablation.py` to reproduce (`outputs/ablation/`).
+
+| Reduction vs baseline | Rule controller | LLM agent | LLM advantage |
+|---|---:|---:|---:|
+| Total electricity | 4.6 % | **6.7 %** | +2.1 pts |
+| HVAC electricity | 10.2 % | **14.9 %** | +4.7 pts |
+| Cooling | 16.1 % | **21.9 %** | +5.8 pts |
+| Energy cost | 7.5 % | **8.6 %** | +1.1 pts |
+| Carbon | 4.3 % | **6.3 %** | +2.0 pts |
+
+The LLM wins on **every** metric — ~45 % more total savings, ~46 % more on HVAC — and
+crucially it is a **fair** comparison: both controllers hold occupant comfort and
+indoor air quality at 100 %. The extra savings come from the LLM reading each
+situation (occupancy, outdoor temperature, grid stress, comfort/IAQ headroom) and
+adjusting, rather than following one fixed rule. That is the concrete evidence the
+reasoning layer earns its place.
+
+## 12. Repository map
 
 ```
 config.yaml                 all tunable knobs (comfort bands, grid, LLM, control cadence)

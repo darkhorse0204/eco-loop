@@ -31,6 +31,11 @@ times**, avoiding the expensive, high-pollution evening hours. It even beat a
 carefully hand-tuned rule-based controller, and ran the full two weeks **without a
 single crash** (a safe backup covered the handful of moments the AI was slow).
 
+We proved the AI earns its place with a head-to-head **ablation** (baseline vs. rule
+controller vs. AI, same building): the LLM wins on **every** metric — ~45% more total
+savings than the hand-tuned rules — while both keep comfort and air quality at 100%.
+See [docs/ARCHITECTURE.md §11](docs/ARCHITECTURE.md) or run `python scripts/ablation.py`.
+
 ---
 
 ## 🤔 What problem does this solve?

@@ -1,0 +1,64 @@
+{
+  "note": "identical building + weather; only the controller differs.",
+  "comfort_iaq": {
+    "rule": {
+      "pmv_ok_pct": 100.0,
+      "max_pmv": 0.489,
+      "co2_ok_pct": 100.0,
+      "max_co2_ppm": 777.9
+    },
+    "llm": {
+      "pmv_ok_pct": 100.0,
+      "max_pmv": 0.559,
+      "co2_ok_pct": 100.0,
+      "max_co2_ppm": 777.1
+    }
+  },
+  "metrics": [
+    {
+      "metric": "Total electricity",
+      "baseline": 2688.584,
+      "rule": 2565.058,
+      "llm": 2509.001,
+      "rule_pct": 4.6,
+      "llm_pct": 6.7,
+      "llm_advantage_pts": 2.1
+    },
+    {
+      "metric": "HVAC",
+      "baseline": 1208.52,
+      "rule": 1084.994,
+      "llm": 1028.936,
+      "rule_pct": 10.2,
+      "llm_pct": 14.9,
+      "llm_advantage_pts": 4.7
+    },
+    {
+      "metric": "Cooling",
+      "baseline": 832.643,
+      "rule": 698.324,
+      "llm": 650.442,
+      "rule_pct": 16.1,
+      "llm_pct": 21.9,
+      "llm_advantage_pts": 5.8
+    },
+    {
+      "metric": "Cost",
+      "baseline": 354.119,
+      "rule": 327.707,
+      "llm": 323.623,
+      "rule_pct": 7.5,
+      "llm_pct": 8.6,
+      "llm_advantage_pts": 1.1
+    },
+    {
+      "metric": "Carbon",
+      "baseline": 926.325,
+      "rule": 886.337,
+      "llm": 868.422,
+      "rule_pct": 4.3,
+      "llm_pct": 6.3,
+      "llm_advantage_pts": 2.0
+    }
+  ]
+}

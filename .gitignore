@@ -42,3 +42,6 @@ docs/DEMO_SCRIPT.md
 docs/PRESENTATION.md
 docs/sih_pitch.html
 scripts/make_pitch.py
+
+# ablation raw run dir (keep ablation.png + ablation.json)
+outputs/ablation/run_*/

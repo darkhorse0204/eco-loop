@@ -310,6 +310,10 @@ def main():
     lat = fig_latency(dec)
     if lat:
         figs.append(lat)
+    # if the ablation study has been run, include its chart (llm vs rule controller)
+    abl = OUT / "ablation" / "ablation.png"
+    if abl.exists():
+        figs.insert(1, abl)
     stats = decision_stats(dec)
     html = build_html(summary, figs, stats)
     (OUT / "report.html").write_text(html, encoding="utf-8")
