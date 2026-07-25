@@ -25,9 +25,11 @@ and adjusts the temperature settings on the fly.
 | **Comfort** (people kept comfortable) | 100% | **100%** | maintained |
 | **Air quality** (CO₂ under 1000 ppm) | 100% | **100%** (max ~777 ppm) | maintained |
 
-**The clever part:** the bill and the carbon drop *more* than the raw energy does.
-That's because the AI doesn't just use less energy — it uses energy at **smarter
-times**, avoiding the expensive, high-pollution evening hours. It even beat a
+**The clever part:** the **bill** drops even *more* than the energy (−8.6% vs −6.7%),
+because the agent saves about **twice as much during the expensive 4–9pm peak**
+(−11.6%) as it does off-peak (−5.5%) — so the savings land where each kWh is priciest.
+(Honest note: **carbon falls roughly in line with energy**, not more — the grid is
+actually cleanest at midday, when a lot of the cooling saving happens.) It even beat a
 carefully hand-tuned rule-based controller, and ran the full two weeks **without a
 single crash** (a safe backup covered the handful of moments the AI was slow).
 

@@ -192,9 +192,13 @@ nothing else changes.
 served from cache; 21 of the ~1,000 decisions used the safe fallback when the model was briefly slow, and the loop never stalled. The agent balances
 energy, cost, carbon, comfort and IAQ at once.*
 
-Cost and carbon fall **more** than raw kWh — the agent is optimising *when* to use
-energy, not just *how much*. That is the signature of intelligent, grid-aware
-control rather than blunt setback.
+Energy **cost** falls more than raw kWh (−8.6 % vs −6.7 %): the agent saves ~2× more
+during the priced 4–9pm peak (−11.6 %) than off-peak (−5.5 %), because the biggest
+cooling reductions coincide with the hot, expensive afternoon (`scripts/grid_savings.py`,
+chart in the report). **Carbon** falls roughly in line with energy (−6.3 %) rather than
+beating it — an honest caveat, since the grid is cleanest at midday when much of the
+cooling saving lands. The efficiency comes from occupancy-aware operation plus a
+comfortable-but-efficient setpoint, not from deliberate load-shifting.
 
 ## 11. Ablation — does the LLM actually beat rules?
 

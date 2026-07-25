@@ -275,9 +275,9 @@ def build_html(summary, figs, stats=None):
   <div class="meta">
     <b>How to read this:</b> the baseline runs the building's native fixed
     schedules; the AI run injects live setpoints through the EnergyPlus Runtime API
-    every {cfg['control_interval_min']} min. Cost & carbon fall <i>more</i> than raw
-    kWh because the agent shifts load out of the high-price / high-carbon evening
-    peak — intelligent, not blind, savings. Autonomy:
+    every {cfg['control_interval_min']} min. Energy <i>cost</i> falls more than raw kWh
+    because the agent saves about twice as much during the priced 4-9pm peak as it does
+    off-peak; carbon tracks energy (the grid is cleanest midday). Autonomy:
     {stats.get('total_decisions', auto['ai_llm_calls'])} setpoint decisions =
     <b>{stats.get('real_inferences','?')} real LLM inferences</b>
     (median {stats.get('median_latency_ms','?')} ms) +
@@ -314,6 +314,10 @@ def main():
     abl = OUT / "ablation" / "ablation.png"
     if abl.exists():
         figs.insert(1, abl)
+    # grid-aware savings chart (when the savings land), if generated
+    gsv = OUT / "figs" / "grid_savings.png"
+    if gsv.exists():
+        figs.insert(4, gsv)
     stats = decision_stats(dec)
     html = build_html(summary, figs, stats)
     (OUT / "report.html").write_text(html, encoding="utf-8")
