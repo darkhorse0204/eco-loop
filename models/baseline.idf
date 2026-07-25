@@ -4963,3 +4963,9 @@
     ,                        !- Nuclear High Level Emission Factor Schedule Name
     0;                       !- Nuclear Low Level Emission Factor {m3/MJ}
 
+
+Schedule:Constant, OUTDOOR_CO2_SCH, Any Number, 400.0;
+
+ZoneAirContaminantBalance,
+  Yes,                     !- Carbon Dioxide Concentration
+  OUTDOOR_CO2_SCH;         !- Outdoor Carbon Dioxide Schedule Name

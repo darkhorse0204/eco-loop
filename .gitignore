@@ -32,3 +32,7 @@ models/self_healed.idf
 # OS
 Thumbs.db
 .DS_Store
+
+# generated pitch-deck artifacts (rebuild with scripts/make_pitch.py)
+docs/*.pdf
+docs/_deck_preview.png

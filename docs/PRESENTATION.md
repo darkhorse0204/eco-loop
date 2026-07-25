@@ -32,7 +32,7 @@ Team · Date
 
 ## Slide 4 — System Architecture
 *(insert the diagram from `docs/ARCHITECTURE.md` §1)*
-- **Sense:** EnergyPlus Runtime API streams zone temps, humidity, occupancy, meters.
+- **Sense:** EnergyPlus Runtime API streams zone temps, humidity, CO₂/IAQ, occupancy, meters.
 - **Reason:** LLM agent (tool-calling) + PMV comfort + grid carbon/price signals.
 - **Act:** guardrail-clamped setpoints injected via `Zone Temperature Control` actuators.
 - **Bus:** same tools exposed over **Model Context Protocol (MCP)**.
@@ -54,19 +54,20 @@ Team · Date
 
 | Metric | Baseline | AI | Reduction |
 |---|---:|---:|---:|
-| Total facility electricity | 2 689 kWh | 2 529 kWh | **−5.9%** |
-| HVAC electricity | 1 209 kWh | 1 049 kWh | **−13.2%** |
-| Cooling | 833 kWh | 668 kWh | **−19.7%** |
-| Energy cost (TOU) | $354 | $326 | **−7.9%** |
-| Carbon | 926 kg | 876 kg | **−5.5%** |
+| Total facility electricity | 2 689 kWh | 2 509 kWh | **−6.7%** |
+| HVAC electricity | 1 209 kWh | 1 029 kWh | **−14.9%** |
+| Cooling | 833 kWh | 650 kWh | **−21.9%** |
+| Energy cost (TOU) | $354 | $324 | **−8.6%** |
+| Carbon | 926 kg | 868 kg | **−6.2%** |
 
 > Cost & carbon fall **more than kWh** — the agent optimises *when* to use energy.
 
 ---
 
-## Slide 7 — Results: Comfort Maintained
-*(insert `outputs/figs/pmv.png` and `outputs/figs/temp_comfort.png`)*
-- **100%** of occupied timesteps kept within the PMV comfort limit (max |PMV| = 0.52).
+## Slide 7 — Results: Comfort & Air Quality Maintained
+*(insert `outputs/figs/pmv.png`, `outputs/figs/temp_comfort.png`, `outputs/figs/iaq.png`)*
+- **100%** of occupied timesteps kept within the PMV comfort limit (max |PMV| = 0.56).
+- **100%** of occupied timesteps kept **indoor CO₂ under 1000 ppm** (max ~777 ppm) — IAQ never sacrificed for energy.
 - Savings achieved **without** sacrificing a single occupant-comfort constraint —
   because the guardrail makes unsafe setpoints physically impossible.
 
@@ -96,7 +97,7 @@ Team · Date
   timeout/error. A controller error can't crash the EnergyPlus callback. 2-week
   loop completes end-to-end.
 - **Real-time:** model kept warm + **semantic caching** → 1,008 candidate decisions
-  collapsed to 170 real inferences (838 cache hits, 0 fallbacks).
+  collapsed to 171 real inferences (816 cache hits, 21 safe fallbacks).
 - **Lengthy logs:** structured at the source; only a small `.err` digest ever
   reaches the LLM.
 

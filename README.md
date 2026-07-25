@@ -1,138 +1,185 @@
 # 🌡️ Eco-Loop Building Agent
 
-**An autonomous, closed-loop AI that runs a building's HVAC in real time — pairing a
-physics-based EnergyPlus simulation with an open-source LLM (`llama3.1:8b`) that
-senses live sensor data, reasons about comfort + grid carbon + cost, and injects
-supervisory setpoints straight back into the running simulation. No human in the
-loop, no code edits.**
+**A building that runs its own air-conditioning with an AI — using less energy, less
+money, and less carbon, while keeping people comfortable and the air fresh.**
 
-> Honeywell Hackathon · *Eco-Loop Building Agents* · a live, operational Physical-AI PoC.
+Everything runs on **one laptop, fully offline**: a physics-accurate building
+simulation (**EnergyPlus**) is controlled in a live loop by a **local open-source AI**
+(**Llama 3.1 8B**, via Ollama). The AI reads the building's sensors every 15 minutes
+and adjusts the temperature settings on the fly.
+
+> Built for the Honeywell *Eco-Loop Building Agents* hackathon — a live, working
+> Physical-AI proof-of-concept.
 
 ---
 
-## 🏆 Headline result (2-week Tampa cooling season, DOE small office)
+## 🏆 What it achieves (2-week summer run, Tampa office)
 
-| Metric | Baseline (standard schedule) | AI closed-loop | Reduction |
+| What we measured | Normal building | With the AI | Improvement |
 |---|---:|---:|---:|
-| **Total facility electricity** | 2 689 kWh | 2 529 kWh | **−5.9 %** |
-| **HVAC electricity** | 1 209 kWh | 1 049 kWh | **−13.2 %** |
-| **Cooling electricity** | 833 kWh | 668 kWh | **−19.7 %** |
-| **Energy cost** (time-of-use) | $354 | $326 | **−7.9 %** |
-| **Carbon** | 926 kg | 876 kg | **−5.5 %** |
-| **Occupant comfort** (occupied \|PMV\| in band) | 100 % | **100 %** (max 0.52) | **maintained** |
+| **Total electricity** | 2 689 kWh | 2 509 kWh | **−6.7%** |
+| **Air-conditioning electricity** | 1 209 kWh | 1 029 kWh | **−14.9%** |
+| **Cooling energy** | 833 kWh | 650 kWh | **−21.9%** |
+| **Energy bill** (time-of-use price) | $354 | $324 | **−8.6%** |
+| **Carbon** | 926 kg | 868 kg | **−6.2%** |
+| **Comfort** (people kept comfortable) | 100% | **100%** | maintained |
+| **Air quality** (CO₂ under 1000 ppm) | 100% | **100%** (max ~777 ppm) | maintained |
 
-*Live llama3.1:8b agent, full 2-week run: 1 008 setpoint decisions = **170 real LLM
-inferences** + 838 semantic-cache hits + **0 fallbacks** (the loop never stalled).*
-
-Cost and carbon drop **more than raw kWh** — the agent optimises *when* energy is
-used, shifting load out of the high-price / high-carbon evening peak. Intelligent
-savings, not blind setback. (The LLM agent even beats our hand-tuned deterministic
-controller, which lands −4.6 % total / −10 % HVAC.)
+**The clever part:** the bill and the carbon drop *more* than the raw energy does.
+That's because the AI doesn't just use less energy — it uses energy at **smarter
+times**, avoiding the expensive, high-pollution evening hours. It even beat a
+carefully hand-tuned rule-based controller, and ran the full two weeks **without a
+single crash** (a safe backup covered the handful of moments the AI was slow).
 
 ---
 
-## ⚡ Quickstart
+## 🤔 What problem does this solve?
 
-Prereqs are installed automatically by the setup below: **EnergyPlus 25.1**
-(portable, no admin) and **Ollama + llama3.1:8b**.
+Buildings use about **40% of all energy in the world**. Most of them run on **fixed
+timers** — the air-conditioning follows the same schedule every day, ignoring the
+weather, whether anyone is actually in the room, and how dirty or expensive the
+electricity is right now. That wastes a huge amount of energy.
+
+Eco-Loop turns a "dumb," scheduled building into a **smart agent** that senses what's
+happening and adapts every few minutes — the way a very attentive human operator
+would, but automatically and non-stop.
+
+---
+
+## 🧠 How it works, in plain English
+
+Think of it as a loop that repeats all day:
+
+1. **The building senses itself.** EnergyPlus (the physics engine) reports the room
+   temperatures, humidity, **CO₂ / air quality**, how many people are in, and how much
+   electricity is being used — every simulated 10 minutes.
+2. **The AI gets a short summary.** Every 15 minutes we hand the AI a tiny summary:
+   how warm it is inside and out, whether the room is occupied, the comfort level, the
+   air quality, and how expensive/dirty the electricity is right now.
+3. **The AI decides — by calling a tool.** The AI doesn't write code or free text. It
+   **calls a function** called `set_hvac_setpoints(cooling, heating, reason)` — like
+   pressing buttons on a thermostat — and gives a one-line reason.
+4. **A safety guardrail checks it.** Whatever the AI asks for is clamped into a safe
+   comfort range *before* it reaches the building. So the AI can never make people
+   uncomfortable, even if it makes a mistake.
+5. **The setting goes back into the live building.** The new temperature target is
+   injected straight into the running simulation. Then the loop repeats.
+
+A few important ideas, explained simply:
+
+- **EnergyPlus** = a highly realistic building simulator used by real engineers. It's
+  our stand-in for a real building.
+- **LLM (Llama 3.1)** = the "brain." An open-source AI that runs on your own computer
+  (no internet, no API key) through a tool called **Ollama**.
+- **Tool-calling** = the AI acts by calling defined functions, not by typing text.
+  This makes it reliable and safe.
+- **Guardrail** = a hard rulebook that keeps the AI's choices inside comfortable and
+  healthy limits.
+- **PMV** = a standard comfort score (from ASHRAE-55 / ISO 7730). 0 is perfect; we
+  keep it comfortable (well within the ±0.7 limit, aiming for ±0.5).
+- **CO₂ (air quality)** = we track indoor carbon dioxide; if it goes above 1000 ppm
+  the air feels stuffy, so the AI keeps it below that.
+- **MCP (Model Context Protocol)** = a standard way for any AI app to use these same
+  building controls as tools.
+
+**Why it's reliable:** every AI request has a time limit. If the AI is slow, errors,
+or is switched off entirely, the loop **automatically falls back to a simple safe
+controller and keeps going** — so it never gets stuck. (This actually happened once
+during testing when the AI server stopped, and the two-week run still finished.)
+
+**Why it's fast:** the AI model stays loaded in memory, and we only ask it a new
+question when the situation genuinely changes — so ~1,000 decision points became only
+171 real AI calls (the rest were served instantly from a cache).
+
+---
+
+## ⚡ Try it in 3 commands
+
+Full step-by-step instructions (with troubleshooting) are in
+**[docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)**. The short version:
 
 ```bash
-# 1. Python deps
-python -m pip install -r requirements.txt
+python -m pip install -r requirements.txt   # 1. install python libraries
+python scripts/setup.py                      # 2. download EnergyPlus + the AI model (once)
+python scripts/build_model.py                # 3. build the Tampa office model (once)
 
-# 2. One-time setup: download portable EnergyPlus + pull the LLM (idempotent)
-python scripts/setup.py
-
-# 3. (Re)build the Tampa-localized building model from the pristine example
-python scripts/build_model.py
-
-# 4. Run the full closed loop: baseline + AI, write savings + artifacts
-python -m src.orchestrator            # LLM agent (auto-falls back to rule if Ollama down)
-#   python -m src.orchestrator --rule # deterministic controller only (no LLM)
-
-# 5. See the results
-python scripts/make_report.py         # -> outputs/report.html (self-contained)
-streamlit run dashboard/app.py        # -> interactive dashboard + LLM decision log
+python -m src.orchestrator                   # run the AI closed loop (~20-30 min)
+python scripts/make_report.py                # then open outputs/report.html
 ```
 
----
-
-## 🧠 How it works (30-second version)
-
-1. **EnergyPlus Runtime API** streams live sensors every 10-min timestep (zone
-   temps, radiant, humidity, occupancy, meters, outdoor conditions).
-2. Every 15 min the runner builds a compact JSON **Snapshot** (state + grid carbon
-   + TOU price) and hands it to the **LLM agent**.
-3. The LLM **calls a tool** — `set_hvac_setpoints(cooling, heating, rationale)` — it
-   reasons in words, acts through a typed tool, never edits code.
-4. A hard **Guardrail** clamps the setpoints to the comfort envelope (so energy is
-   never saved at comfort's expense).
-5. Setpoints are **injected live** into EnergyPlus via the `Zone Temperature
-   Control` actuators. Loop repeats for the whole run.
-
-Full write-up (prompt engineering, latency management, log handling, self-correction):
-**[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)**.
-
-### Why it's robust (System Integration)
-Every LLM call is **time-boxed and wrapped**; on timeout/error/garbage output the
-loop falls back to a **deterministic grid-aware controller** and keeps running. A
-controller exception can *never* crash the EnergyPlus callback. The 2-week loop runs
-start-to-finish without stalling.
-
-### Why it's fast (Latency)
-Model kept warm (`keep_alive`) + **semantic caching**: the LLM is only called when
-the *operating regime* changes (occupancy / peak / outdoor-temp bucket), turning
-1,008 candidate decisions into 170 real inferences (838 cache hits).
-
-### Agentic autonomy + MCP
-The agent acts only through tools. The **same tools are exposed over the Model
-Context Protocol** (`mcp_server/server.py`) so any MCP client (a desktop assistant,
-an IDE, another agent) can sense and supervise the building:
-`get_building_state`, `get_grid_signals`, `propose_setpoints`, `get_savings_summary`,
-`get_simulation_errors`, `list_actuators`.
+Quick test without the AI (finishes in seconds): `python -m src.orchestrator --rule`
+Interactive dashboard: `streamlit run dashboard/app.py`
 
 ---
 
-## 📦 Deliverables map
-
-| Required deliverable | Where |
-|---|---|
-| Fully functional source code (API wrapper + LLM orchestration + comms bus) | `src/`, `mcp_server/` |
-| Building models (baseline + runtime-modified `.idf`) | `models/baseline.idf`, `outputs/ai_effective.idf` |
-| Quantitative savings dashboard (proves % kWh ↓ within comfort) | `outputs/report.html`, `dashboard/app.py` |
-| System Architecture document | `docs/ARCHITECTURE.md` |
-| Demo video script | `docs/DEMO_SCRIPT.md` |
-
----
-
-## 🗂️ Repository layout
+## 🗂️ What's in this repo
 
 ```
-config.yaml               every tunable knob (comfort bands, grid, LLM, cadence)
+config.yaml               all the settings you can change (comfort limits, price, AI model...)
 src/
-  runner.py               EnergyPlus Runtime-API closed-loop bus            ← core
-  llm_agent.py            Ollama tool-calling agent + cache + fallback      ← brain
-  controller.py           hard Guardrail + deterministic grid-aware policy
-  comfort.py              Fanger PMV/PPD (ISO 7730)
-  grid_signals.py         carbon intensity + time-of-use price
-  orchestrator.py         baseline + AI runs → savings summary + artifacts
-mcp_server/server.py      MCP tools over the building
-dashboard/app.py          Streamlit dashboard (+ live LLM decision log)
-scripts/                  setup, build_model, make_report, self-correction, probes
-models/baseline.idf       DOE small office, localized to Tampa FL
-outputs/                  timeseries, decisions, summary.json, report.html, figs/
+  runner.py               the core loop: read sensors, ask controller, inject settings   ← heart
+  llm_agent.py            the AI brain: talks to Llama 3.1, caches, falls back safely     ← brain
+  controller.py           the safety guardrail + the simple rule-based backup controller
+  comfort.py              the PMV comfort score (ASHRAE-55 / ISO 7730)
+  grid_signals.py         the electricity price + carbon curve over the day
+  orchestrator.py         runs baseline + AI, computes the savings, saves everything
+  self_correction.py      reads EnergyPlus errors and fixes the model by itself
+mcp_server/server.py      exposes the building controls as standard MCP tools
+dashboard/app.py          the interactive Streamlit dashboard
+scripts/
+  setup.py                one-time download of EnergyPlus + the AI model
+  build_model.py          builds the building model (Tampa, CO₂ tracking on)
+  make_report.py          builds outputs/report.html (the savings dashboard)
+  make_pitch.py           builds the 6-slide submission deck
+  demo_self_correction.py the self-healing demo
+  probe_api_data.py       lists every sensor/control EnergyPlus exposes
+models/baseline.idf       the office building model
+weather/                  the Tampa weather file
+outputs/                  results: charts, CSVs, summary.json, report.html
+docs/                     ARCHITECTURE, DEPLOYMENT, DEMO_SCRIPT, PRESENTATION, the deck
 ```
 
-## 🔧 Configuration
-Everything lives in [`config.yaml`](config.yaml): comfort envelope + PMV limit,
-grid carbon/price profile, LLM model + timeout, control interval, run paths. Swap
-the weather file or model there and re-run — nothing else changes.
+---
 
-## 🧪 Reproducibility notes
-- Building: **DOE Reference Small Office** (ships with EnergyPlus), localized to
-  Tampa, FL (Site:Location + weather). Baseline uses the building's native fixed
-  setpoint schedules — the "standard scheduling" the brief asks us to beat.
-- Energy accounting sums `Electricity:Building` + `Electricity:HVAC` (the facility
-  electricity), read live through the API with the **identical** method for both
-  runs, so the % comparison is strictly apples-to-apples. Cross-checked against the
-  EnergyPlus SQLite tabular output.
+## ✅ How this meets the hackathon brief
+
+| The brief asked for | Where it is |
+|---|---|
+| EnergyPlus simulation + Python bridge | `src/runner.py` (EnergyPlus Runtime API) |
+| Open-source LLM running locally | `src/llm_agent.py` (Llama 3.1 8B via Ollama) |
+| MCP server / agentic tools | `mcp_server/server.py` (6 tools) |
+| AI parses files, reads runtime errors, fixes things itself | `src/self_correction.py` |
+| Stream temps, **air quality**, energy, PMV | `src/runner.py` (all four, every timestep) |
+| Reason about comfort, peak cost, grid carbon | `src/llm_agent.py` |
+| Compute measures, update setpoints, inject them live | `src/runner.py` actuators |
+| Quantified kWh **and cost** savings, comfort held | table above · `outputs/report.html` |
+| Baseline + runtime-modified `.idf` files | `models/baseline.idf`, `outputs/ai_effective.idf` |
+| System architecture document | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) |
+| Demo video | script in [docs/DEMO_SCRIPT.md](docs/DEMO_SCRIPT.md) |
+| Presentation | [docs/PRESENTATION.md](docs/PRESENTATION.md) + `docs/sih_pitch.html` |
+
+**Scored against the judging criteria:** robust closed loop that never crashes
+(System Integration), real measured energy + cost + carbon savings (Efficiency),
+comfort *and* air quality both maintained (Comfort & Constraints), tool-calling + MCP
++ self-correction + smart caching (Agentic Autonomy), and a clear dashboard + docs
+(Presentation).
+
+---
+
+## 📚 Documentation
+
+- **[docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)** — full setup, run, share & troubleshoot guide (start here).
+- **[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)** — how the system is built, in depth.
+- **[docs/DEMO_SCRIPT.md](docs/DEMO_SCRIPT.md)** — the 3-minute demo video script.
+- **[docs/PRESENTATION.md](docs/PRESENTATION.md)** — slide-by-slide presentation content.
+
+---
+
+## 🧪 A note on honesty of the numbers
+
+The baseline and the AI run use the **same building model**; the only difference is
+that the AI changes the settings live. Energy is measured the **same way for both**
+(EnergyPlus electricity meters read through the API), so the percentage savings are a
+fair, apples-to-apples comparison. The grid price/carbon curve is realistic but
+simulated — it's a one-line change to plug in a live data source (e.g. WattTime or
+Electricity Maps).

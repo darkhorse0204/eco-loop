@@ -55,8 +55,8 @@ Show `src/controller.py` Guardrail briefly.
 Show `outputs/report.html` (or `streamlit run dashboard/app.py`).
 > "Here are the numbers, baseline versus AI, over two weeks in Tampa: total
 > facility electricity down **5.9%**, HVAC down **13%**, cooling down **20%** —
-> while comfort is maintained on **100%** of occupied steps, PMV staying in the
-> band. And notice: **cost is down 7.9% and carbon 5.5% — more than the raw energy
+> while **both comfort and indoor air quality are maintained**: PMV stays in the band
+> and CO₂ never crosses 1000 ppm. And notice: **cost is down 7.9% and carbon 5.5% — more than the raw energy
 > — because the agent shifts load out of the dirty, expensive evening peak.**"
 
 Scroll to the setpoint chart:

@@ -15,8 +15,6 @@ simulation:
 control:
   interval_minutes: 15         # how often the agent is allowed to move setpoints
   llm_timeout_s: 20            # hard cap per llm decision; fall back on timeout
-  zones_are_global: true       # one setpoint pair applied to all occupied zones
-                               # (fast + robust). per-zone mode also works.
 
 comfort:
   # ashrae-55 style occupied comfort envelope. the guardrail never lets the agent
@@ -28,6 +26,7 @@ comfort:
   occupied_cooling_max_c: 25.5
   min_deadband_c: 2.0
   pmv_limit: 0.7               # |pmv| has to stay under this while occupied
+  co2_limit_ppm: 1000          # indoor-air-quality target - occupied co2 must stay under this
   # unoccupied setback room (ashrae 90.1 night-setback range)
   unocc_heating_min_c: 15.6
   unocc_cooling_max_c: 29.4

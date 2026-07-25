@@ -51,20 +51,23 @@ control is genuinely *in the loop*. Two callbacks are registered per run:
 | `callback_end_zone_timestep_after_zone_reporting` | accumulate meters + log the timeseries after the zone is solved |
 
 Every timestep we stream, per zone: mean air temp, mean radiant temp, relative
-humidity, occupant count, and the live thermostat setpoints, plus site outdoor
-temperature and the `Electricity:Building`, `Electricity:HVAC`, `Cooling` and
-`Fans` meters. From temp + radiant + RH we compute **Fanger PMV/PPD (ISO 7730)** in
-Python — a first-class comfort KPI the agent reasons about and the guardrail
-enforces. All accounting is gated to the weather run period (`kind_of_sim == 3`) so
-sizing design-days never pollute the numbers.
+humidity, **indoor CO₂ concentration (IAQ)**, occupant count, and the live thermostat
+setpoints, plus site outdoor temperature and the `Electricity:Building`,
+`Electricity:HVAC`, `Cooling` and `Fans` meters. From temp + radiant + RH we compute
+**Fanger PMV/PPD (ISO 7730)** in Python — a first-class comfort KPI the agent reasons
+about and the guardrail enforces. Indoor CO₂ (enabled via `ZoneAirContaminantBalance`
+with the occupants' default generation rate) is the **IAQ** signal: the agent keeps it
+under a 1000 ppm target while it saves energy. All accounting is gated to the weather
+run period (`kind_of_sim == 3`) so sizing design-days never pollute the numbers.
 
 ## 3. Reasoning: the LLM as building operator
 
 Each control interval the runner hands the agent a compact JSON `Snapshot`
 (time-of-day, occupancy, outdoor temp, worst PMV, indoor temp, **grid carbon +
 price + peak flag**, current setpoints). The agent evaluates it against targets:
-occupant comfort (|PMV| ≤ 0.5 goal, ≤ 0.7 hard limit), peak-demand cost, and grid
-carbon intensity.
+occupant comfort (|PMV| ≤ 0.5 goal, ≤ 0.7 hard limit), **indoor air quality (CO₂ <
+1000 ppm)**, peak-demand cost, and grid carbon intensity — a genuine multi-objective
+trade-off (energy vs cost vs carbon vs comfort vs IAQ).
 
 The LLM responds by **calling a tool** — it never writes code:
 
@@ -111,7 +114,7 @@ slow. Three mechanisms keep the loop real-time:
 2. **Semantic caching.** We hash the *operating regime* — occupancy, grid-peak
    flag, outdoor-temp bucket (2 °C), comfort-at-risk flag — and only spend an LLM
    call when the regime changes. Over the 2-week run this collapsed 1,008 candidate
-   decisions into just 170 real inference calls (838 served from cache).
+   decisions into just 171 real inference calls (816 from cache, plus 21 safe fallbacks).
 3. **Warm model.** The model is preloaded (`keep_alive: 30m`) so no decision pays a
    cold-start; typical decision latency is a few hundred ms and is logged per call.
 
@@ -152,15 +155,17 @@ nothing else changes.
 
 | Metric | Baseline | AI | Reduction |
 |---|---|---|---|
-| Total facility electricity | 2 689 kWh | 2 529 kWh | **5.9 %** |
-| HVAC electricity | 1 209 kWh | 1 049 kWh | **13.2 %** |
-| Cooling electricity | 833 kWh | 668 kWh | **19.7 %** |
-| Energy cost (TOU) | $354 | $326 | **7.9 %** |
-| Carbon | 926 kg | 876 kg | **5.5 %** |
-| Occupied comfort (|PMV| ok) | 100 % | 100 % (max 0.52) | maintained |
+| Total facility electricity | 2 689 kWh | 2 509 kWh | **6.7 %** |
+| HVAC electricity | 1 209 kWh | 1 029 kWh | **14.9 %** |
+| Cooling electricity | 833 kWh | 650 kWh | **21.9 %** |
+| Energy cost (TOU) | $354 | $324 | **8.6 %** |
+| Carbon | 926 kg | 868 kg | **6.2 %** |
+| Occupied comfort (|PMV| ok) | 100 % | 100 % (max 0.56) | maintained |
+| Indoor air quality (CO₂ ok) | — | 100 % (max ~777 ppm) | maintained |
 
-*Live llama3.1:8b, full 2-week run: 1 008 setpoint decisions = 170 real LLM
-inferences + 838 semantic-cache hits + 0 deterministic fallbacks.*
+*Live llama3.1:8b, full 2-week run: ~1 000 setpoint decisions, the large majority
+served from cache; 21 of the ~1,000 decisions used the safe fallback when the model was briefly slow, and the loop never stalled. The agent balances
+energy, cost, carbon, comfort and IAQ at once.*
 
 Cost and carbon fall **more** than raw kWh — the agent is optimising *when* to use
 energy, not just *how much*. That is the signature of intelligent, grid-aware

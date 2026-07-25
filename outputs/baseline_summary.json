@@ -13,6 +13,9 @@
   "mean_occupied_abs_pmv": 0.1473,
   "max_occupied_abs_pmv": 0.356,
   "pct_occupied_steps_pmv_ok": 100.0,
+  "max_occupied_co2_ppm": 779.5,
+  "mean_occupied_co2_ppm": 501.1,
+  "pct_occupied_steps_iaq_ok": 100.0,
   "n_llm_calls": 0,
   "n_fallbacks": 0
 }

@@ -34,6 +34,10 @@ Hard rules you must respect:
 - When UNOCCUPIED: you may set back hard -- heating ~15.6 C, cooling up to ~28-29 C -- to
   save energy, but avoid extreme setups that cause an expensive morning recovery.
 - Cooling setpoint must always be at least 2 C above the heating setpoint.
+- INDOOR AIR QUALITY: keep worst_indoor_co2_ppm under 1000 ppm while occupied. It is
+  healthy now because the supply fan brings in fresh air whenever it runs to cool; if
+  co2 ever climbs toward the limit, keep the cooling setpoint low enough to keep the fan
+  and ventilation active rather than letting the zone coast.
 
 Strategy: during the grid PEAK / high-carbon window, float the cooling setpoint to the
 warm end of the comfort band (25.5 C) to shave the most expensive, dirtiest kWh. When the

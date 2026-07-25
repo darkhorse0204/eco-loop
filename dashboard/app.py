@@ -49,7 +49,8 @@ st.caption(
     f"{cfg['control_interval_min']} min · EnergyPlus Runtime API closed loop"
 )
 
-c = st.columns(5)
+iaq = sv.get("iaq", {})
+c = st.columns(6)
 c[0].metric("Total electricity", f"{sv['electricity_kwh']['ai']:.0f} kWh",
             f"−{sv['electricity_kwh']['pct']:.1f}%", delta_color="inverse")
 c[1].metric("HVAC electricity", f"{sv['hvac_kwh']['ai']:.0f} kWh",
@@ -60,6 +61,8 @@ c[3].metric("Carbon", f"{sv['carbon_kg']['ai']:.0f} kg",
             f"−{sv['carbon_kg']['pct']:.1f}%", delta_color="inverse")
 c[4].metric("Comfort (occ. PMV ok)", f"{sv['comfort']['ai_pct_pmv_ok']:.0f}%",
             f"max |PMV| {sv['comfort']['ai_max_abs_pmv']}")
+c[5].metric("Air quality (CO₂ ok)", f"{iaq.get('ai_pct_co2_ok', 100):.0f}%",
+            f"max {iaq.get('ai_max_co2_ppm', 0):.0f} ppm")
 
 st.divider()
 left, right = st.columns(2)
@@ -121,6 +124,16 @@ with right2:
     fig.update_layout(height=320, margin=dict(l=0, r=0, t=10, b=0),
                       xaxis_title="Day", yaxis_title="|PMV|", showlegend=False)
     st.plotly_chart(fig, use_container_width=True)
+
+st.subheader("Indoor air quality — CO₂ kept healthy while saving energy")
+occ = a[a.occupied.astype(bool)]
+fig = go.Figure()
+fig.add_hrect(y0=350, y1=1000, fillcolor=C_AI, opacity=0.06, line_width=0)
+fig.add_scatter(x=occ.day, y=occ.max_co2_ppm, name="Worst zone CO₂", line=dict(color="#0072B2", width=1.5))
+fig.add_hline(y=1000, line=dict(color=C_BASE, dash="dash", width=1.2))
+fig.update_layout(height=280, margin=dict(l=0, r=0, t=10, b=0),
+                  xaxis_title="Day", yaxis_title="CO₂ (ppm)", showlegend=False)
+st.plotly_chart(fig, use_container_width=True)
 
 st.divider()
 st.subheader("🤖 LLM agent decision log (tool calls)")

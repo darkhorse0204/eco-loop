@@ -47,6 +47,12 @@ def compute_savings(base: dict, ai: dict) -> dict:
         "ai_max_abs_pmv": ai["max_occupied_abs_pmv"],
         "comfort_maintained": ai["pct_occupied_steps_pmv_ok"] >= 99.0,
     }
+    out["iaq"] = {
+        "ai_pct_co2_ok": ai.get("pct_occupied_steps_iaq_ok", 100.0),
+        "ai_mean_co2_ppm": ai.get("mean_occupied_co2_ppm", 0.0),
+        "ai_max_co2_ppm": ai.get("max_occupied_co2_ppm", 0.0),
+        "iaq_maintained": ai.get("pct_occupied_steps_iaq_ok", 100.0) >= 99.0,
+    }
     out["autonomy"] = {
         "ai_llm_calls": ai.get("n_llm_calls", 0),
         "ai_fallbacks": ai.get("n_fallbacks", 0),
@@ -105,6 +111,10 @@ def run_closed_loop(cfg: Config, controller_kind: str = "llm",
     c = savings["comfort"]
     progress(f"  comfort         : occupied pmv-ok {c['ai_pct_pmv_ok']}% "
              f"(max|pmv|={c['ai_max_abs_pmv']}) maintained={c['comfort_maintained']}")
+    q = savings["iaq"]
+    progress(f"  iaq (co2)       : occupied co2-ok {q['ai_pct_co2_ok']}% "
+             f"(max={q['ai_max_co2_ppm']}ppm mean={q['ai_mean_co2_ppm']}ppm) "
+             f"maintained={q['iaq_maintained']}")
     a = savings["autonomy"]
     progress(f"  autonomy        : {a['ai_llm_calls']} llm decisions, "
              f"{a['ai_fallbacks']} deterministic fallbacks")

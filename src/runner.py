@@ -20,7 +20,7 @@ from __future__ import annotations
 
 import json
 import time
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Callable, Optional
 
@@ -69,6 +69,8 @@ class Snapshot:
     zones: list[dict]
     mean_air_temp_c: float
     max_abs_pmv: float
+    mean_co2_ppm: float
+    max_co2_ppm: float
     current_setpoints: dict[str, tuple[float, float]]
 
     def to_prompt_dict(self) -> dict:
@@ -81,6 +83,7 @@ class Snapshot:
             "occupants": round(self.total_occupants, 1),
             "mean_indoor_temp_c": round(self.mean_air_temp_c, 1),
             "worst_pmv": round(self.max_abs_pmv, 2),
+            "worst_indoor_co2_ppm": round(self.max_co2_ppm),
             "grid_carbon_gco2_kwh": self.grid["carbon_gco2_kwh"],
             "grid_price_usd_kwh": self.grid["price_usd_kwh"],
             "grid_peak_period": self.grid["is_peak_period"],
@@ -146,6 +149,7 @@ class EnergyPlusRunner:
             ex.request_variable(self.state, "Zone Mean Air Temperature", z)
             ex.request_variable(self.state, "Zone Mean Radiant Temperature", z)
             ex.request_variable(self.state, "Zone Air Relative Humidity", z)
+            ex.request_variable(self.state, "Zone Air CO2 Concentration", z)
             ex.request_variable(self.state, "Zone People Occupant Count", z)
             ex.request_variable(
                 self.state, "Zone Thermostat Heating Setpoint Temperature", z
@@ -175,6 +179,7 @@ class EnergyPlusRunner:
                 st, "Zone Mean Radiant Temperature", z
             )
             h[("rh", z)] = ex.get_variable_handle(st, "Zone Air Relative Humidity", z)
+            h[("co2", z)] = ex.get_variable_handle(st, "Zone Air CO2 Concentration", z)
             h[("occ", z)] = ex.get_variable_handle(
                 st, "Zone People Occupant Count", z
             )
@@ -220,12 +225,15 @@ class EnergyPlusRunner:
         zones = []
         total_occ = 0.0
         temps = []
+        co2s = []
         max_pmv = 0.0
+        max_co2 = 0.0
         cur_sps: dict[str, tuple[float, float]] = {}
         for z in CONTROLLED_ZONES:
             ta = ex.get_variable_value(st, self._h[("tair", z)])
             tr = ex.get_variable_value(st, self._h[("trad", z)])
             rh = ex.get_variable_value(st, self._h[("rh", z)])
+            co2 = ex.get_variable_value(st, self._h[("co2", z)])
             occ = ex.get_variable_value(st, self._h[("occ", z)])
             htg = ex.get_variable_value(st, self._h[("htgsp", z)])
             clg = ex.get_variable_value(st, self._h[("clgsp", z)])
@@ -236,6 +244,7 @@ class EnergyPlusRunner:
                     "air_temp_c": round(ta, 2),
                     "radiant_temp_c": round(tr, 2),
                     "rh_pct": round(rh, 1),
+                    "co2_ppm": round(co2),
                     "occupants": round(occ, 2),
                     "pmv": c.pmv,
                     "ppd": c.ppd,
@@ -246,8 +255,10 @@ class EnergyPlusRunner:
             cur_sps[z] = (htg, clg)
             total_occ += occ
             temps.append(ta)
+            co2s.append(co2)
             if occ > 0.5:
                 max_pmv = max(max_pmv, abs(c.pmv))
+                max_co2 = max(max_co2, co2)
 
         hour = ex.current_time(st)
         doy = ex.day_of_year(st)
@@ -268,6 +279,8 @@ class EnergyPlusRunner:
             zones=zones,
             mean_air_temp_c=sum(temps) / len(temps),
             max_abs_pmv=max_pmv,
+            mean_co2_ppm=sum(co2s) / len(co2s),
+            max_co2_ppm=max_co2,
             current_setpoints=cur_sps,
         )
 
@@ -395,6 +408,8 @@ class EnergyPlusRunner:
                 "occupants": round(snap.total_occupants, 2),
                 "mean_air_temp_c": round(snap.mean_air_temp_c, 3),
                 "max_abs_pmv": round(snap.max_abs_pmv, 3),
+                "mean_co2_ppm": round(snap.mean_co2_ppm, 1),
+                "max_co2_ppm": round(snap.max_co2_ppm, 1),
                 "interval_elec_kwh": round(de * J_TO_KWH, 6),
                 "interval_hvac_kwh": round(d_hvac * J_TO_KWH, 6),
                 "interval_cool_kwh": round(d_cool * J_TO_KWH, 6),
@@ -415,6 +430,7 @@ class EnergyPlusRunner:
                 row[f"{z}_pmv"] = zd["pmv"]
                 row[f"{z}_htgsp"] = zd["heating_sp_c"]
                 row[f"{z}_clgsp"] = zd["cooling_sp_c"]
+                row[f"{z}_co2"] = zd["co2_ppm"]
                 row[f"{z}_occ"] = zd["occupants"]
             self.timeseries.append(row)
         except Exception as e:
@@ -444,11 +460,14 @@ class EnergyPlusRunner:
     def summary(self, rc: int = 0, wall: float = 0.0) -> dict:
         occ_rows = [r for r in self.timeseries if r["occupied"]]
         pmvs = [r["max_abs_pmv"] for r in occ_rows]
+        co2s = [r["max_co2_ppm"] for r in occ_rows]
         total_cost = sum(r["interval_cost_usd"] for r in self.timeseries)
         total_carbon = sum(r["interval_carbon_kg"] for r in self.timeseries)
         comfort_viol = sum(
             1 for r in occ_rows if r["max_abs_pmv"] > self.cfg["comfort"]["pmv_limit"]
         )
+        co2_limit = self.cfg["comfort"].get("co2_limit_ppm", 1000)
+        iaq_viol = sum(1 for r in occ_rows if r["max_co2_ppm"] > co2_limit)
         return {
             "label": self.label,
             "return_code": rc,
@@ -465,6 +484,13 @@ class EnergyPlusRunner:
             "max_occupied_abs_pmv": round(max(pmvs), 4) if pmvs else 0.0,
             "pct_occupied_steps_pmv_ok": round(
                 100.0 * (len(occ_rows) - comfort_viol) / len(occ_rows), 2
+            )
+            if occ_rows
+            else 100.0,
+            "max_occupied_co2_ppm": round(max(co2s), 1) if co2s else 0.0,
+            "mean_occupied_co2_ppm": round(sum(co2s) / len(co2s), 1) if co2s else 0.0,
+            "pct_occupied_steps_iaq_ok": round(
+                100.0 * (len(occ_rows) - iaq_viol) / len(occ_rows), 2
             )
             if occ_rows
             else 100.0,

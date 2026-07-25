@@ -74,8 +74,19 @@ def main():
         flags=re.S,
     )
 
+    # 6) turn on indoor-air-quality (co2) modelling so the agent has an iaq signal.
+    #    the People objects already carry the default co2 generation rate, so once
+    #    the contaminant balance is on we get realistic indoor co2 (~400 empty,
+    #    ~750 occupied). outdoor baseline is a flat 400 ppm.
+    idf += (
+        "\nSchedule:Constant, OUTDOOR_CO2_SCH, Any Number, 400.0;\n\n"
+        "ZoneAirContaminantBalance,\n"
+        "  Yes,                     !- Carbon Dioxide Concentration\n"
+        "  OUTDOOR_CO2_SCH;         !- Outdoor Carbon Dioxide Schedule Name\n"
+    )
+
     OUT.write_text(idf, encoding="latin-1")
-    print(f"built {OUT} | run {bm}/{bd}->{em}/{ed} | tampa site:location | weather-run on")
+    print(f"built {OUT} | run {bm}/{bd}->{em}/{ed} | tampa | weather-run on | co2/iaq on")
 
 
 if __name__ == "__main__":

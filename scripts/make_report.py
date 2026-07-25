@@ -138,6 +138,22 @@ def fig_pmv(a):
     return save(fig, "pmv.png")
 
 
+def fig_iaq(a):
+    fig, ax = plt.subplots(figsize=(7.6, 3.0))
+    _style(ax)
+    occ = a[a.occupied.astype(bool)]
+    ax.axhspan(350, 1000, color=C_AI, alpha=0.08, label="Healthy (< 1000 ppm)")
+    ax.plot(occ.day, occ.max_co2_ppm, color="#0072B2", lw=1.4)
+    ax.axhline(1000, color=C_BASE, ls="--", lw=1.2, label="IAQ limit")
+    ax.set_ylim(350, max(1050, occ.max_co2_ppm.max() * 1.1))
+    ax.set_xlabel("Day")
+    ax.set_ylabel("Worst occupied CO₂ (ppm)")
+    ax.set_title("Indoor air quality held healthy while saving energy",
+                 fontweight="bold", loc="left")
+    ax.legend(frameon=False, loc="upper right", fontsize=10)
+    return save(fig, "iaq.png")
+
+
 def fig_setpoints(b, a):
     w = (a.day >= 3) & (a.day <= 5.5)
     bb, aa = b[w], a[w]
@@ -215,7 +231,10 @@ def build_html(summary, figs, stats=None):
         tile("Carbon", f"−{sv['carbon_kg']['pct']:.1f}%",
              f"{sv['carbon_kg']['saved']:.0f} kg CO₂ saved", C_PEAK),
         tile("Comfort", f"{comfort['ai_pct_pmv_ok']:.0f}%",
-             f"occupied steps |PMV|≤{summary['ai'].get('pmv_limit','0.7')} · max {comfort['ai_max_abs_pmv']}",
+             f"occupied |PMV| ok · max {comfort['ai_max_abs_pmv']}",
+             "#0072B2"),
+        tile("Air quality", f"{summary['savings'].get('iaq', {}).get('ai_pct_co2_ok', 100):.0f}%",
+             f"CO₂ ok · max {summary['savings'].get('iaq', {}).get('ai_max_co2_ppm', 0):.0f} ppm",
              "#0072B2"),
     ])
     imgs = "".join(
@@ -286,6 +305,7 @@ def main():
         fig_setpoints(b, a),
         fig_temp_comfort(b, a),
         fig_pmv(a),
+        fig_iaq(a),
     ]
     lat = fig_latency(dec)
     if lat:
