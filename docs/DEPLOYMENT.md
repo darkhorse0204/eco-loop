@@ -209,6 +209,7 @@ this proof-of-concept to a product.
 | Symptom | Fix |
 |---|---|
 | `ollama not reachable ... running in fallback mode` | Ollama isn't running. Open a terminal and run `ollama serve`, or start the Ollama app, then re-run. |
+| Ollama returns 500 / `CUDA error: shared object initialization failed` | The GPU runner is unstable on this machine. Force CPU: set `OLLAMA_NUM_GPU=0` (and `CUDA_VISIBLE_DEVICES=-1`) **before** starting `ollama serve`. CPU inference is ~9s per decision, which is fine here. |
 | `couldn't find energyplus` | Run `python scripts/setup.py`, or set `ECO_LOOP_EPLUS_DIR` to your EnergyPlus folder. |
 | The AI run is very slow | Normal on CPU (~9 s per real decision). Use `--rule` for a quick test, or run on a machine with a GPU. |
 | `No results yet` in the dashboard | Run `python -m src.orchestrator` first — the dashboard reads its output files. |
