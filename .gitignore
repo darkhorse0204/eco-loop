@@ -2,7 +2,7 @@
 tools/EnergyPlus*/
 tools/*.zip
 tools/*.exe
-tools/*.log
+tools/*.log*
 
 # Python
 __pycache__/
