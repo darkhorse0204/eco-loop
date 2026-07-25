@@ -137,6 +137,8 @@ scripts/
   setup.py                one-time download of EnergyPlus + the AI model
   build_model.py          builds the building model (Tampa, CO₂ tracking on)
   make_report.py          builds outputs/report.html (the savings dashboard)
+  ablation.py             baseline vs rule controller vs LLM, head-to-head
+  grid_savings.py         shows the savings land in the expensive peak (cost > energy)
   demo_self_correction.py the self-healing demo
   probe_api_data.py       lists every sensor/control EnergyPlus exposes
 models/baseline.idf       the office building model

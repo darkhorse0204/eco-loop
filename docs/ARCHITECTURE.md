@@ -234,9 +234,12 @@ src/
   controller.py             hard Guardrail + deterministic grid-aware ECM policy
   llm_agent.py              Ollama tool-calling agent + semantic cache + fallback   ← brain
   orchestrator.py           baseline + AI runs → savings summary + artifacts
+  self_correction.py        parse EnergyPlus .err, fix the IDF, re-run (self-heal)
 mcp_server/server.py        MCP tools over the building
 dashboard/app.py            Streamlit interactive dashboard
-scripts/                    build_model, make_report, self-correction, probes
-models/baseline.idf         DOE small office, localized to Tampa
-outputs/                    timeseries, decisions, summary.json, report.html, figs/
+scripts/                    setup, build_model, make_report, ablation, grid_savings,
+                            demo_self_correction, probe_api_data
+models/baseline.idf         DOE small office, localized to Tampa, CO₂/IAQ modelling on
+outputs/                    timeseries, decisions, summary.json, report.html, figs/,
+                            ai_effective.idf (runtime-modified model), ablation/
 ```
