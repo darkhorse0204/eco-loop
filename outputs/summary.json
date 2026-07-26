@@ -9,7 +9,7 @@
   "baseline": {
     "label": "baseline",
     "return_code": 0,
-    "wall_seconds": 3.6,
+    "wall_seconds": 4.8,
     "sim_steps": 2016,
     "total_elec_kwh": 2688.584,
     "total_hvac_kwh": 1208.52,
@@ -30,59 +30,59 @@
   "ai": {
     "label": "ai",
     "return_code": 0,
-    "wall_seconds": 1515.9,
+    "wall_seconds": 1543.3,
     "sim_steps": 2016,
-    "total_elec_kwh": 2509.001,
-    "total_hvac_kwh": 1028.936,
-    "total_cool_kwh": 650.442,
-    "total_fans_kwh": 378.494,
-    "total_gas_kwh": 116.823,
-    "total_cost_usd": 323.623,
-    "total_carbon_kg": 868.422,
-    "mean_occupied_abs_pmv": 0.2804,
+    "total_elec_kwh": 2505.95,
+    "total_hvac_kwh": 1025.885,
+    "total_cool_kwh": 648.018,
+    "total_fans_kwh": 377.868,
+    "total_gas_kwh": 116.817,
+    "total_cost_usd": 323.194,
+    "total_carbon_kg": 867.073,
+    "mean_occupied_abs_pmv": 0.2833,
     "max_occupied_abs_pmv": 0.559,
     "pct_occupied_steps_pmv_ok": 100.0,
     "max_occupied_co2_ppm": 777.1,
     "mean_occupied_co2_ppm": 499.9,
     "pct_occupied_steps_iaq_ok": 100.0,
-    "n_llm_calls": 987,
-    "n_fallbacks": 21
+    "n_llm_calls": 1008,
+    "n_fallbacks": 0
   },
   "savings": {
     "electricity_kwh": {
       "baseline": 2688.584,
-      "ai": 2509.001,
-      "saved": 179.583,
-      "pct": 6.68
+      "ai": 2505.95,
+      "saved": 182.634,
+      "pct": 6.79
     },
     "hvac_kwh": {
       "baseline": 1208.52,
-      "ai": 1028.936,
-      "saved": 179.584,
-      "pct": 14.86
+      "ai": 1025.885,
+      "saved": 182.635,
+      "pct": 15.11
     },
     "cooling_kwh": {
       "baseline": 832.643,
-      "ai": 650.442,
-      "saved": 182.201,
-      "pct": 21.88
+      "ai": 648.018,
+      "saved": 184.625,
+      "pct": 22.17
     },
     "cost_usd": {
       "baseline": 354.119,
-      "ai": 323.623,
-      "saved": 30.496,
-      "pct": 8.61
+      "ai": 323.194,
+      "saved": 30.925,
+      "pct": 8.73
     },
     "carbon_kg": {
       "baseline": 926.325,
-      "ai": 868.422,
-      "saved": 57.903,
-      "pct": 6.25
+      "ai": 867.073,
+      "saved": 59.252,
+      "pct": 6.4
     },
     "comfort": {
       "baseline_pct_pmv_ok": 100.0,
       "ai_pct_pmv_ok": 100.0,
-      "ai_mean_abs_pmv": 0.2804,
+      "ai_mean_abs_pmv": 0.2833,
       "ai_max_abs_pmv": 0.559,
       "comfort_maintained": true
     },
@@ -93,8 +93,8 @@
       "iaq_maintained": true
     },
     "autonomy": {
-      "ai_llm_calls": 987,
-      "ai_fallbacks": 21
+      "ai_llm_calls": 1008,
+      "ai_fallbacks": 0
     }
   }
 }

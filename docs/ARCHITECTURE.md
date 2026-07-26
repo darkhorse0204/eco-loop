@@ -139,7 +139,7 @@ slow. Three mechanisms keep the loop real-time:
 2. **Semantic caching.** We hash the *operating regime* — occupancy, grid-peak
    flag, outdoor-temp bucket (2 °C), comfort-at-risk flag — and only spend an LLM
    call when the regime changes. Over the 2-week run this collapsed 1,008 candidate
-   decisions into just 171 real inference calls (816 from cache, plus 21 safe fallbacks).
+   decisions into just 171 real inference calls (837 from cache, 0 fallbacks).
 3. **Warm model.** The model is preloaded (`keep_alive: 30m`) so no decision pays a
    cold-start; typical decision latency is a few hundred ms and is logged per call.
 
@@ -180,22 +180,22 @@ nothing else changes.
 
 | Metric | Baseline | AI | Reduction |
 |---|---|---|---|
-| Total facility electricity | 2 689 kWh | 2 509 kWh | **6.7 %** |
-| HVAC electricity | 1 209 kWh | 1 029 kWh | **14.9 %** |
-| Cooling electricity | 833 kWh | 650 kWh | **21.9 %** |
-| Energy cost (TOU) | $354 | $324 | **8.6 %** |
-| Carbon | 926 kg | 868 kg | **6.2 %** |
+| Total facility electricity | 2 689 kWh | 2 506 kWh | **6.8 %** |
+| HVAC electricity | 1 209 kWh | 1 026 kWh | **15.1 %** |
+| Cooling electricity | 833 kWh | 648 kWh | **22.2 %** |
+| Energy cost (TOU) | $354 | $323 | **8.7 %** |
+| Carbon | 926 kg | 867 kg | **6.4 %** |
 | Occupied comfort (|PMV| ok) | 100 % | 100 % (max 0.56) | maintained |
 | Indoor air quality (CO₂ ok) | — | 100 % (max ~777 ppm) | maintained |
 
 *Live llama3.1:8b, full 2-week run: ~1 000 setpoint decisions, the large majority
-served from cache; 21 of the ~1,000 decisions used the safe fallback when the model was briefly slow, and the loop never stalled. The agent balances
+served from cache; 0 of the 1,000 decisions needed the safe fallback in this run (the loop never stalled); the fallback is proven separately below. The agent balances
 energy, cost, carbon, comfort and IAQ at once.*
 
-Energy **cost** falls more than raw kWh (−8.6 % vs −6.7 %): the agent saves ~2× more
+Energy **cost** falls more than raw kWh (−8.7 % vs −6.8 %): the agent saves ~2× more
 during the priced 4–9pm peak (−11.6 %) than off-peak (−5.5 %), because the biggest
 cooling reductions coincide with the hot, expensive afternoon (`scripts/grid_savings.py`,
-chart in the report). **Carbon** falls roughly in line with energy (−6.3 %) rather than
+chart in the report). **Carbon** falls roughly in line with energy (−6.4 %) rather than
 beating it — an honest caveat, since the grid is cleanest at midday when much of the
 cooling saving lands. The efficiency comes from occupancy-aware operation plus a
 comfortable-but-efficient setpoint, not from deliberate load-shifting.
@@ -209,11 +209,11 @@ occupancy- and grid-aware), on the **identical** building and weather. Run
 
 | Reduction vs baseline | Rule controller | LLM agent | LLM advantage |
 |---|---:|---:|---:|
-| Total electricity | 4.6 % | **6.7 %** | +2.1 pts |
-| HVAC electricity | 10.2 % | **14.9 %** | +4.7 pts |
-| Cooling | 16.1 % | **21.9 %** | +5.8 pts |
-| Energy cost | 7.5 % | **8.6 %** | +1.1 pts |
-| Carbon | 4.3 % | **6.3 %** | +2.0 pts |
+| Total electricity | 4.6 % | **6.8 %** | +2.2 pts |
+| HVAC electricity | 10.2 % | **15.1 %** | +4.9 pts |
+| Cooling | 16.1 % | **22.2 %** | +6.1 pts |
+| Energy cost | 7.5 % | **8.7 %** | +1.2 pts |
+| Carbon | 4.3 % | **6.4 %** | +2.1 pts |
 
 The LLM wins on **every** metric — ~45 % more total savings, ~46 % more on HVAC — and
 crucially it is a **fair** comparison: both controllers hold occupant comfort and

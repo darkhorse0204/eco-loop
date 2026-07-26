@@ -17,21 +17,21 @@ and adjusts the temperature settings on the fly.
 
 | What we measured | Normal building | With the AI | Improvement |
 |---|---:|---:|---:|
-| **Total electricity** | 2 689 kWh | 2 509 kWh | **−6.7%** |
-| **Air-conditioning electricity** | 1 209 kWh | 1 029 kWh | **−14.9%** |
-| **Cooling energy** | 833 kWh | 650 kWh | **−21.9%** |
-| **Energy bill** (time-of-use price) | $354 | $324 | **−8.6%** |
-| **Carbon** | 926 kg | 868 kg | **−6.2%** |
+| **Total electricity** | 2 689 kWh | 2 506 kWh | **−6.8%** |
+| **Air-conditioning electricity** | 1 209 kWh | 1 026 kWh | **−15.1%** |
+| **Cooling energy** | 833 kWh | 648 kWh | **−22.2%** |
+| **Energy bill** (time-of-use price) | $354 | $323 | **−8.7%** |
+| **Carbon** | 926 kg | 867 kg | **−6.4%** |
 | **Comfort** (people kept comfortable) | 100% | **100%** | maintained |
 | **Air quality** (CO₂ under 1000 ppm) | 100% | **100%** (max ~777 ppm) | maintained |
 
-**The clever part:** the **bill** drops even *more* than the energy (−8.6% vs −6.7%),
+**The clever part:** the **bill** drops even *more* than the energy (−8.7% vs −6.8%),
 because the agent saves about **twice as much during the expensive 4–9pm peak**
-(−11.6%) as it does off-peak (−5.5%) — so the savings land where each kWh is priciest.
+(−11.7%) as it does off-peak (−5.6%) — so the savings land where each kWh is priciest.
 (Honest note: **carbon falls roughly in line with energy**, not more — the grid is
 actually cleanest at midday, when a lot of the cooling saving happens.) It even beat a
 carefully hand-tuned rule-based controller, and ran the full two weeks **without a
-single crash** (a safe backup covered the handful of moments the AI was slow).
+single crash** (the safe backup is there if the AI ever stalls — see reliability below).
 
 We proved the AI earns its place with a head-to-head **ablation** (baseline vs. rule
 controller vs. AI, same building): the LLM wins on **every** metric — ~45% more total
@@ -136,6 +136,7 @@ dashboard/app.py          the interactive Streamlit dashboard
 scripts/
   setup.py                one-time download of EnergyPlus + the AI model
   build_model.py          builds the building model (Tampa, CO₂ tracking on)
+  demo.py                 narrated end-to-end walkthrough (great for the video)
   make_report.py          builds outputs/report.html (the savings dashboard)
   ablation.py             baseline vs rule controller vs LLM, head-to-head
   grid_savings.py         shows the savings land in the expensive peak (cost > energy)
